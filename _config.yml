@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "G. M. Nguegnang | Applied Maths & AI Alignment" #Your Name / Site Title
+title                    : "G. M. Nguegnang | Applied Math & AI Research Scientist" #Your Name / Site Title
 title_separator          : "-"
 name                     : &name "Gabin Maxime Nguegnang"
 description              : &description "PhD Researcher bridging Mathematical Optimization and practical AI in production. Expertise post-training strategies, including RLHF, RLVR, and Rubric, to enhance the reasoning and alignment of modern AI models for specialized real-world tasks."   # privously Your Name's academic portfolio<--Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "G. M. Nguegnang" #Your Sidebar Name
   pronouns         : "He/Him" # example: "she/her"  
-  bio              : "Ph.D. Researcher in Applied Math & Deep Learning <br><b><b> Model Alignment, RLHF, RLVR, & Optimization<br><b><b> Accurate, aligned, and reliable Industrial AI"  #"Short biography for the left-hand sidebar"
+  bio              : "Applied Math Researcher combining academic precision with industrial requirements. I leverage rigorous optimization theory and post-training strategies (RLHF, RLVR) to enhance the reasoning and alignment of modern AI systems."  #"Short biography for the left-hand sidebar"
   location         : "Earth"
   employer         : "Ludwig Maximilian University of Munich"
   uri              : "https://www.math.lmu.de/mip/en/members/contact-page/gabin-maxime-nguegnang-82eb61a4.html" # URL
@@ -48,7 +48,7 @@ author:
 
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
+  bitbucket        : "mnguegnang"# Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
   github           : "academicpages"    # initiatlly academicpages
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "Maxime Nguegnang"# Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -78,7 +78,7 @@ author:
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
-  xing             : # Username
+  xing             : "Gabin Maxime Nguegnang"# Username
   youtube          : # Username
   zhihu            : # Username
 
