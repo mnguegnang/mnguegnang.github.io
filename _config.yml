@@ -24,21 +24,21 @@ repository               : "mnguegnang/mnguegnang.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  name             : "G. M. Nguegnang" #Your Sidebar Name
+  pronouns         : "He/Him" # example: "she/her"  
+  bio              : "Ph.D. Researcher in Applied Math & Deep Learning <br><b><b> Model Alignment, RLHF, RLVR, & Optimization<br><b><b> Accurate, aligned, and reliable Industrial AI"  #"Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  employer         : "Ludwig Maximilian University of Munich"
+  uri              : "https://www.math.lmu.de/mip/en/members/contact-page/gabin-maxime-nguegnang-82eb61a4.html" # URL
+  email            : "nguegnang@math.lmu.de" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=g0C5-_QAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/yourorcidurl" # to be update
   semantic         : # URL
   ssrn             : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "academicpages"    # initiatlly academicpages
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
