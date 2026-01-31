@@ -53,7 +53,7 @@ Prior to my current focus on LLM alignment, I delivered successful machine learn
 **Technical Communication & Mentorship**
 I demonstrate leadership through research coordination, academic mentorship, and the effective communication of complex technical ideas.
 *   **Research Coordination:** As a **corresponding author** for multiple publications, I managed coordination with co-authors, editors, and reviewers, ensuring that complex findings were presented clearly and persuasively.
-*   **Academic Mentorship:** Assisted in supervising master's theses and taught exercise classes for mathematical foundations of **Machine Learning, Deep Learning, Data Science, and Optimization** at top German universities (LMU Munich, RWTH Aachen).
+*   **Mentorship:** Assisted in supervising master's theses and taught exercise classes for mathematical foundations of **Machine Learning, Deep Learning, Data Science, and Optimization** at top German universities (LMU Munich, RWTH Aachen).
 *   **Effective Communication:** Through international presentations and academic mentorship, I have mastered the ability to translate technical complexity into actionable insights that support strategic decision-making.
 
 ---
