@@ -19,16 +19,25 @@ As an Applied Mathematics Consultant for AI Model Training, I focus on **stress-
 *   **Advanced Alignment:** Expertise in **Reinforcement Learning from Human Feedback (RLHF)** and **Reinforcement Learning with Verifiable Rewards (RLVR)** to align model behavior with human intent.
 *   **Reasoning Enhancement:** Utilizing **Chain-of-Thought (CoT)** frameworks to transform complex mathematical concepts into reliable ground-truth data, improving model reasoning in STEM domains.
 *   **Agentic AI & Error Analysis:** Conducting deep analysis of **agent trajectories** to assess their alignment with user requests. I evaluate **Function Calling** precision (e.g., detecting "Trigger Phrases") and classify execution results to diagnose failures in multi-step reasoning tasks.
-*   **Evaluation & Peer Review:** Designing detailed rubrics and reviewing peer contributions to ensure that prompt engineering strategies and model reasoning outputs consistently meet rigorous industry standards.
+*   **Evaluation & Peer Review:** Designing detailed rubrics and reviewing peer contributions to ensure that prompt engineering strategies and **model reasoning outputs consistently meet key industry standards**.
 ---
 
-## Research Foundations: Deep Learning Optimization
-My doctoral research focused on the **convergence analysis of gradient-based methods** for training deep neural networks. By analyzing the theoretical foundations underpinning modern machine learning, I have helped bridge the gap between theory and practice to enable more efficient training strategies.
+## Academic Research Interest: Deep Learning, Optimization, Dynamical Systems & Stochastic Approximation 
+My doctoral research focused on the **convergence analysis of gradient-based methods** for training deep neural networks. By applying principles from **optimization**, **dynamical systems**, and **stochastic approximation**, I bridged the critical gap between theoretical guarantees and practical implementation, enabling more efficient training strategies.
 
-**Key Contributions:**
-*   **Theoretical Analysis:** Derived optimal parameter initialization and adaptive learning rate schedules for Stochastic Gradient Descent (SGD).
-*   **Publications:** Author of *"Convergence of gradient descent for learning linear neural networks"* (**Springer Nature, 2024**) and presenter at the International Conference on Sampling Theory and Applications (**Yale University, 2023**).
-*   **Explainable AI:** Contributed to enhancing fairness and performance in XAI frameworks for industrial power generation plants.
+**Samples of Key Findings & Contributions:**
+
+**1. Convergence of Gradient Descent (GD) for Learning Linear Neural Networks** *(Springer Nature, 2024)*
+*   **Convergence to Critical Points:** Proved that under suitable step-size conditions, GD reliably converges to a critical point of the square loss function of linear neural networks, establishing a baseline stability guarantee for practical nonconvex optimization problems.
+*   **Global Convergence & Rank Manifolds:** Extended prior findings of linear neural networks from Gradient Flow to GD. We demonstrated that for **two-layer networks**, GD converges to a global minimum for almost all initializations. For **three or more layers**, we proved convergence to a global minimum on the manifold of matrices of a fixed rank, advancing the understanding of optimization dynamics in deep architectures.
+
+**2. Analysis of Stochastic Gradient Descent (SGD) for Learning Linear Neural Networks**
+*   **Bridging the Theoretical Gap:** While state-of-the-art SGD analysis typically relies on Lipschitz continuous gradients (or their variants), a property that is not applicable to neural networks' objective functions, my work addressed this limitation. We directly analyzed SGD in the context of training linear neural networks, effectively closing the gap between the theoretical understanding of SGD and its practical behavior in non-convex objectives.    
+*   **Dynamics Control & Convergence Guarantees:** Analyzed the discrete dynamics of SGD to devise rigorous bounds that control its evolution, effectively mitigating the **exploding gradient problem** during training. Based on this stability analysis, we established suitable **learning rate schedules (including adaptive learning)** that mathematically guarantee the **convergence of SGD for training linear neural networks**.
+
+**3. From Theory to Practice: Extending to Non-Linear Networks**
+*   **Empirical Validation:** Experimentally assessed whether the theoretical properties developed for linear networks hold in broader contexts with nonlinear activation functions.
+*   **Non-Linear Extension:** Demonstrated empirically that our theoretical findings extend to **neural networks with non-linear activation functions**, validating these mathematical principles in real-world deep learning architectures.
 
 ---
 
