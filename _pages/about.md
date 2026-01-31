@@ -1,11 +1,49 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me" #"Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+I am an **Applied Mathematics Researcher** and **AI Consultant** with over 6 years of experience bridging the gap between theoretical deep learning and scalable AI production.
+My PhD research findings, obtained at **LMU Munich** and **RWTH Aachen**, improve earlier contributions on the mathematical foundations underpinning the training of deep Neural Networks.
+I translate this theoretical expertise into high-impact industrial solutions, especially in **post-training strategies** including Reinforcement Learning from Human Feedback (**RLHF**), Reinforcement Learning with Verifiable Rewards (**RLVR**), and **Rubric development** to advance the reasoning capabilities and alignment of Large Language Models (LLMs) for top AI Labs.
+My work combines academic precision with industrial requirements, delivering AI systems that are **accurate, aligned, and reliable** for specialized real-world tasks.
+
+---
+## Current Focus: LLM Alignment & Post-Training Strategy
+As an Applied Mathematics Consultant for AI Model Training, I focus on **stress-testing frontier models** to expose critical reasoning and agentic failures, engineering the solutions that bridge performance gaps. My work centers on systematically identifying failure modes in complex logic and agent trajectories, then designing rigorous, math-grounded frameworks that empower AI systems to master specialized, multi-step tasks they were previously unable to execute efficiently.
+
+*   **Advanced Alignment:** Expertise in **Reinforcement Learning from Human Feedback (RLHF)** and **Reinforcement Learning with Verifiable Rewards (RLVR)** to align model behavior with human intent.
+*   **Reasoning Enhancement:** Utilizing **Chain-of-Thought (CoT)** frameworks to transform complex mathematical concepts into reliable ground-truth data, improving model reasoning in STEM domains.
+*   **Agentic AI & Error Analysis:** Conducting deep analysis of **agent trajectories** to assess their alignment with user requests. I evaluate **Function Calling** precision (e.g., detecting "Trigger Phrases") and classify execution results to diagnose failures in multi-step reasoning tasks.
+*   **Evaluation & Peer Review:** Designing detailed rubrics and reviewing peer contributions to ensure that prompt engineering strategies and model reasoning outputs consistently meet rigorous industry standards.
+---
+
+## Research Foundations: Deep Learning Optimization
+My doctoral research focused on the **convergence analysis of gradient-based methods** for training deep neural networks. By analyzing the theoretical foundations underpinning modern machine learning, I have helped bridge the gap between theory and practice to enable more efficient training strategies.
+
+**Key Contributions:**
+*   **Theoretical Analysis:** Derived optimal parameter initialization and adaptive learning rate schedules for Stochastic Gradient Descent (SGD).
+*   **Publications:** Author of *"Convergence of gradient descent for learning linear neural networks"* (**Springer Nature, 2024**) and presenter at the International Conference on Sampling Theory and Applications (**Yale University, 2023**).
+*   **Explainable AI:** Contributed to enhancing fairness and performance in XAI frameworks for industrial power generation plants.
+
+---
+
+## Industrial Experience & Leadership
+Prior to my doctoral studies and current consulting work, I delivered successful industrial solutions, including:
+*   **Anomaly Detection:** Developed systems for telecom base stations to detect faults and optimize maintenance.
+*   **Predictive Modeling:** Created algorithms for fuel consumption prediction to limit pilferage and optimize logistics.
+
+**Technical Leadership:**
+I have extensive experience coordinating with co-authors, supervising Master's theses, and teaching foundational courses in **Machine Learning, Data Science, and Optimization** at top German universities. I am passionate about translating technical complexity into actionable insights that support strategic decision-making.
+
+---
+
+### 📄 [Download my Full CV](/files/cv.pdf)
+
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
