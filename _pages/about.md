@@ -13,6 +13,7 @@ I translate this theoretical expertise into high-impact industrial solutions, es
 My work combines academic precision with industrial requirements, delivering AI systems that are **accurate, aligned, and reliable** for specialized real-world tasks.
 
 ---
+
 ## Current Focus: LLM Alignment & Post-Training Strategy
 As an Applied Mathematics Consultant for AI Model Training, I focus on **stress-testing frontier models** to expose critical reasoning and agentic failures, engineering the solutions that bridge performance gaps. My work centers on systematically identifying failure modes in complex logic and agent trajectories, then designing rigorous, math-grounded frameworks that empower AI systems to master specialized, multi-step tasks they were previously unable to execute efficiently.
 
@@ -20,6 +21,7 @@ As an Applied Mathematics Consultant for AI Model Training, I focus on **stress-
 *   **Reasoning Enhancement:** Utilizing **Chain-of-Thought (CoT)** frameworks to transform complex mathematical concepts into reliable ground-truth data, improving model reasoning in STEM domains.
 *   **Agentic AI & Error Analysis:** Conducting deep analysis of **agent trajectories** to assess their alignment with user requests. I evaluate **Function Calling** precision (e.g., detecting "Trigger Phrases") and classify execution results to diagnose failures in multi-step reasoning tasks.
 *   **Evaluation & Peer Review:** Designing detailed rubrics and reviewing peer contributions to ensure that prompt engineering strategies and **model reasoning outputs consistently meet key industry standards**.
+  
 ---
 
 ## Academic Research Interest: Deep Learning, Optimization, Dynamical Systems & Stochastic Approximation 
@@ -35,19 +37,24 @@ My doctoral research focused on the **convergence analysis of gradient-based met
 *   **Bridging the Theoretical Gap:** While state-of-the-art SGD analysis typically relies on Lipschitz continuous gradients (or their variants), a property that is not applicable to neural networks' objective functions, my work addressed this limitation. We directly analyzed SGD in the context of training linear neural networks, effectively closing the gap between the theoretical understanding of SGD and its practical behavior in non-convex objectives.    
 *   **Dynamics Control & Convergence Guarantees:** Analyzed the discrete dynamics of SGD to devise rigorous bounds that control its evolution, effectively mitigating the **exploding gradient problem** during training. Based on this stability analysis, we established suitable **learning rate schedules (including adaptive learning)** that mathematically guarantee the **convergence of SGD for training linear neural networks**.
 
-**3. From Theory to Practice: Extending to Non-Linear Networks**
-*   **Empirical Validation:** Experimentally assessed whether the theoretical properties developed for linear networks hold in broader contexts with nonlinear activation functions.
-*   **Non-Linear Extension:** Demonstrated empirically that our theoretical findings extend to **neural networks with non-linear activation functions**, validating these mathematical principles in real-world deep learning architectures.
-
+**3. Empirical Extension to General Nonlinear Networks**
+*   **Validation with General Activation Functions:** Experimentally assessed whether the theoretical properties developed for linear networks hold in broader contexts involving **nonlinear activation functions**.
+*   **Extension to Nonlinear Networks:** Demonstrated empirically that the theoretical findings regarding **learning rate and convergence** extend to **common nonlinear networks**, validating these mathematical principles in broader deep learning architectures.
+  
 ---
 
-## Industrial Experience & Leadership
-Prior to my doctoral studies and current consulting work, I delivered successful industrial solutions, including:
-*   **Anomaly Detection:** Developed systems for telecom base stations to detect faults and optimize maintenance.
-*   **Predictive Modeling:** Created algorithms for fuel consumption prediction to limit pilferage and optimize logistics.
+## Further Industrial Solutions & Technical Leadership
+Prior to my current focus on LLM alignment, I delivered successful machine learning solutions for industrial applications, contributing to the translation of mathematical models into deployed software.
 
-**Technical Leadership:**
-I have extensive experience coordinating with co-authors, supervising Master's theses, and teaching foundational courses in **Machine Learning, Data Science, and Optimization** at top German universities. I am passionate about translating technical complexity into actionable insights that support strategic decision-making.
+*   **Explainable AI (XAI) for Industry:** Contributed to developing an ML-based anomaly detection framework that balances accuracy with fairness to enable interpretable AI solutions for high-stakes decision-making.
+*   **Anomaly Detection for Telecom:** Developed systems for telecom base stations to detect anomalies in fuel consumption data.
+*   **Predictive Modeling for Logistics:** Engineered algorithms for fuel consumption prediction to limit pilferage and optimize supply chain logistics.
+
+**Technical Communication & Mentorship**
+I demonstrate leadership through research coordination, academic mentorship, and the effective communication of complex technical ideas.
+*   **Research Coordination:** As a **corresponding author** for multiple publications, I managed coordination with co-authors, editors, and reviewers, ensuring that complex findings were presented clearly and persuasively.
+*   **Academic Mentorship:** Assisted in supervising master's theses and taught exercise classes for mathematical foundations of **Machine Learning, Deep Learning, Data Science, and Optimization** at top German universities (LMU Munich, RWTH Aachen).
+*   **Effective Communication:** Through international presentations and academic mentorship, I have mastered the ability to translate technical complexity into actionable insights that support strategic decision-making.
 
 ---
 
