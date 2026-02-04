@@ -1,6 +1,6 @@
 ---
 title: "Training Neural Networks"
-excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png'>"
+excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN'><View code</a>"
 collection: portfolio
 ---
 
