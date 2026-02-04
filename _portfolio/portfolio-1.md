@@ -18,9 +18,10 @@ This work studies the convergence properties of GD for training deep neural netw
 
 <figure class="half">
     <img src="/images/Loss_evolution_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Linear network">
-    <img src="/images/my_optimized_method.png" alt="Nonlinear networks">
-    <figcaption>Global convergence of GD for training linear neural networks on the left panel and nonlinear networks on the right panel.</figcaption>
+    <img src="/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png" alt="Nonlinear networks">
+    <figcaption><em>Figure 2: Global convergence of GD for training linear neural networks on the left panel and nonlinear networks on the right panel.</em></figcaption>
 </figure>
+
 
 {% comment %}
 ![Global convergence of GD in linear neural networks](/images/Loss_evolution_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png)
