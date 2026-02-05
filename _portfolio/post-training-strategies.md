@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI & Post-training strategies"
-excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' width='300' height='596' style='object-fit: contain;'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
+excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' width='400' height='794' style='object-fit: contain;'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
 collection: portfolio
 ---
 
@@ -29,7 +29,7 @@ I investigate YAML files to understand user requests, evaluate the rubric princi
 Upon completion of the post-training phase, models acquire the specialized knowledge necessary to address problems they previously could not solve.
 
 <figure>
-    <img src="/images/Post_training_flowchart.png" alt="Boundedness" width='500' height='993' style='object-fit: contain;'>
+    <img src="/images/Post_training_flowchart.png" alt="Boundedness" width='600' height='1191' style='object-fit: contain;'>
     <figcaption>Figure 1: Post-training flowchart.</figcaption>
 </figure>
 
