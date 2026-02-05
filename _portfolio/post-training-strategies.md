@@ -1,9 +1,7 @@
 ---
 title: "Agentic AI & Post-training strategies"
-excerpt: "Frameworks for stress-testing frontier models and optimizing logical reasoning via post-training strategies.<br/><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
+excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
 collection: portfolio
-header:
-  teaser: /images/Post_training_flowchart.png
 ---
 
 ## Limitations of Current Frontier AI Models
@@ -25,7 +23,7 @@ RLVR is ideal for tasks with objective answers, such as mathematical problems, w
 Based on Chain-of-Thought (CoT) frameworks, I break complex tasks, such as those based on research questions in mathematics, into verifiable steps. This approach transforms technical solution steps into reliable ground-truth data.  For example, writing the optimization process  of recovering MRI images into fine-grained steps.
 
 ### 3. Error Analysis & Rubric Evaluation
-I investigate YAML files to understand user requests, analyze agent trajectories to detect specific failure modes, and evaluate the rubric. I examine both the agent's and the world agent's reasoning to ensure the agent did not fail due to the world agent's mistake. Moreover, examine the transcript to identify where the model made a Function Calling error, for example, missing a call of the right function or calling the right function with the wrong parameters. 
+I investigate YAML files to understand user requests, evaluate the rubric principle, and analyze agent trajectories to detect specific failure modes. I examine both the agent's and the world agent's reasoning to ensure the agent did not fail due to the world agent's mistake. Moreover, examine the transcript to identify where the model made a Function Calling error, for example, missing a call of the right function or calling the right function with the wrong parameters. 
 
 ### 4. Successful Model Improvement
 Upon completion of the post-training phase, models acquire the specialized knowledge necessary to address problems they previously could not solve.
