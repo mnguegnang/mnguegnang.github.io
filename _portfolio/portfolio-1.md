@@ -1,6 +1,6 @@
 ---
 title: "Analysis of Training Neural Networks"
-excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN' class='btn btn--info'>View code</a>"
+excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png' width='700'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN' class='btn btn--info'>View code</a>"
 collection: portfolio
 ---
 
