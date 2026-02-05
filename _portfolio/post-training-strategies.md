@@ -3,7 +3,7 @@ title: "Agentic AI & Post-training strategies"
 excerpt: "Frameworks for stress-testing frontier models and optimizing logical reasoning via post-training strategies.<br/><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
 collection: portfolio
 header:
-  teaser: /images/agentic_alignment_diagram.png
+  teaser: /images/Post_training_flowchart.png
 ---
 
 ## The Challenge
@@ -27,7 +27,7 @@ Based on Chain-of-Thought (CoT) frameworks, I break complex tasks, such as those
 ### 3. Error Analysis & Rubric Design
 I investigate YAML files to understand user requests, analyze agent trajectories to detect specific failure modes, and evaluate the rubric. I examine both the agent's and the world agent's reasoning to ensure the agent did not fail due to the world agent's mistake. Moreover, examine the transcript to identify where the model made a Function Calling error, for example, missing a call of the right function or calling the right function with the wrong parameters.  
 
-![Alignment Diagram](/images/agentic_alignment_diagram.png)
+![Alignment Diagram](/images/Post_training_flowchart.png)
 *Figure 1: The conceptual flow of aligning agentic reasoning.*
 
 ## Methodology Repository
