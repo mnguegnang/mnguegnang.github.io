@@ -7,11 +7,7 @@ header:
 ---
 
 ## The Challenge
-Advanced AI models often struggle with multi-step reasoning, including those of specialized STEM domains. 
-In professional environments, models frequently fail to address complex tasks that require a synthesis of 
-specialized knowledge. In the same line agent fail to execute user requests that involve complex agentic trajectories. 
-A major reason for Frontier models' failure is that they are pre-trained on general patterns (knowledge) to predict 
-the most likely next token, without necessarily relying on deep domain knowledge. 
+Advanced AI models often struggle with multi-step reasoning, including those within specialized STEM domains. In professional environments, these models frequently fail to address complex tasks that require a synthesis of specialized knowledge. For instance, when tasked with executing a multi-step chemical reaction process or solving a dynamic engineering problem that requires using earlier results to inform later steps, the models fall short. Similarly, agents sometimes fail to execute user requests involving intricate agentic trajectories, such as a single-use, time-limited administrative credential password that should be deleted afterward. A major reason for Frontier AI models' failure is that they are pre-trained on general patterns to predict the most likely next token, rather than on deep domain knowledge.  
 
 ## Approach to improve Frontier AI qualities on specialized real-world tasks
 
@@ -25,17 +21,11 @@ Reinforcement Learning with Verifiable Rewards (RLVR), and Rubric criteria.
 ### 1. Model Alignment with RLHF & RLVR)
 RLVR is ideal for tasks with objective answers, such as mathematical problems, while RLHF is best for tasks with subjective answers, e.g., writing a novel. This is where one of my major contributions through the Rubric criteria comes into play, balancing subjective and objective preferences. A core aspect of rubric criteria is that it enables the reward model to learn human preferences with better objective and granular learning proceduce compare to RHLF.
 
-
-*   *Technique:* Decomposing complex integrals or optimization problems into atomic logical steps to prevent "reasoning jumps."
-
-### 2. Advanced Alignment (RLHF & RLVR)
-I apply **Reinforcement Learning from Human Feedback** strategies to define reward models.1. Reasoning Enhancement (CoT)
-*   **RLVR Focus:** For mathematical tasks, I advocate for **Verifiable Rewards**—ensuring that the model is rewarded not just for sounding correct, but for producing mathematically provable steps.
+### 2. Reasoning Enhancement (CoT)
+Based on Chain-of-Thought (CoT) frameworks, I break complex tasks, such as those based on research questions in mathematics, into verifiable steps. This approach transforms technical solution steps into reliable ground-truth data.  For example, writing the optimization process  of recovering MRI images into fine-grained steps.
 
 ### 3. Error Analysis & Rubric Design
-I analyze agent trajectories to detect specific failure modes:
-*   **Function Calling Errors:** Detecting when an agent fails to trigger the correct tool.
-*   **Logic Drift:** Identifying where the derivation deviates from axioms.
+I investigate YAML files to understand user requests, analyze agent trajectories to detect specific failure modes, and evaluate the rubric. I examine both the agent's and the world agent's reasoning to ensure the agent did not fail due to the world agent's mistake. Moreover, examine the transcript to identify where the model made a Function Calling error, for example, missing a call of the right function or calling the right function with the wrong parameters.  
 
 ![Alignment Diagram](/images/agentic_alignment_diagram.png)
 *Figure 1: The conceptual flow of aligning agentic reasoning.*
