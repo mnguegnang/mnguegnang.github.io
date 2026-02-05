@@ -1,6 +1,6 @@
 ---
 title: "Analysis of Training Neural Networks"
-excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png' width='700'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN' class='btn btn--info'>View code</a>"
+excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png' width='600' height='500' style='object-fit: contain;'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN' class='btn btn--info'>View code</a>"
 collection: portfolio
 ---
 
@@ -11,7 +11,7 @@ Training neural networks involves optimizing a nonconvex loss function with resp
 A critical component of the analysis is the development of a norm-based bound on GD to address the exploding gradient problem. The boundedness of GD is subsequently used to establish a fundamental property of iterative descent methods, demonstrating that GD satisfies the requirements of the discrete version of Lojasiewicz's theorem. The plots below depict the evolution of the overparameterized weight matrices for the three networks throughout training.
 
 <figure>
-    <img src="/images/Parameterized_matrix_norms_comparison_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Boundedness" width="700">
+    <img src="/images/Parameterized_matrix_norms_comparison_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Boundedness" width='720' height='600' style='object-fit: contain;'>
     <figcaption>Figure 1: Boundedness of the overparameterized matrix across networks.</figcaption>
 </figure>
 {% comment %}
