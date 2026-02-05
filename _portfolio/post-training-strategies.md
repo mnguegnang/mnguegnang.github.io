@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI & Post-training strategies"
-excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
+excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' width='700'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
 collection: portfolio
 ---
 
