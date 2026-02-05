@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI & Post-training strategies"
-excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' width='700'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
+excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' width='600'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
 collection: portfolio
 ---
 
@@ -28,8 +28,15 @@ I investigate YAML files to understand user requests, evaluate the rubric princi
 ### 4. Successful Model Improvement
 Upon completion of the post-training phase, models acquire the specialized knowledge necessary to address problems they previously could not solve.
 
+<figure>
+    <img src="/images/Post_training_flowchart.png" alt="Boundedness" width="600">
+    <figcaption>Figure 1: Post-training flowchart.</figcaption>
+</figure>
+
+{% comment %}
 ![Alignment Diagram](/images/Post_training_flowchart.png)
 *Figure 1: Post-training flowchart*
+{% endcomment %}
 
 ## Methodology Repository
 Since the specific models and data are proprietary, I have published a repository containing **demonstration templates** of the rubrics and prompting strategies I employ.
