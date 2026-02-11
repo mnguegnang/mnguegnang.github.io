@@ -28,7 +28,7 @@ author:
   pronouns         : "He/Him" # example: "she/her"  
   bio              : "Applied Math Researcher combining academic precision with industrial requirements. I leverage rigorous optimization theory and post-training strategies (RLHF, RLVR) to enhance the reasoning and alignment of modern AI systems."  #"Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Ludwig Maximilian University (LMU) of Munich"
+  employer         : "Ludwig Maximilian University" #(LMU) of Munich
   uri              : "https://www.math.lmu.de/mip/en/members/contact-page/gabin-maxime-nguegnang-82eb61a4.html" # URL
   email            : "nguegnang@math.lmu.de" 
 
