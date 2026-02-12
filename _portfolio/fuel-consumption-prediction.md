@@ -73,7 +73,7 @@ fuel_prediction_app/
         <!-- RIGHT COLUMN: EXPLANATION -->
         <div style="flex: 1; min-width: 280px;">
             <p style="margin-top: 0;"><strong>Modular Design Pattern</strong><br>
-            The project uses a Production-Ready structure rather than a flat script. It utilizes <strong>Flask Blueprints</strong> to decouple API logic from visualization.</p>
+            The project uses <strong>Flask Blueprints</strong> to decouple API logic from visualization.</p>
             
             <ul style="padding-left: 20px;">
                 <li style="margin-bottom: 10px;">
@@ -102,17 +102,13 @@ fuel_prediction_app/
 
 The application transforms raw Excel data into decision-support dashboards.
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="flex: 1; min-width: 300px;">
-        <img src='/images/fuel_cluster_chart.png' alt='Cluster Analysis' style='width: 100%; border: 1px solid #eee; border-radius: 5px;'>
-        <p style="text-align: center; font-style: italic; font-size: 0.9em;">Figure 3: Cluster Analysis identifying high-consumption regions.</p>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-        <img src='/images/fuel_time_series.png' alt='Time Series Analysis' style='width: 100%; border: 1px solid #eee; border-radius: 5px;'>
-        <p style="text-align: center; font-style: italic; font-size: 0.9em;">Figure 4: Time-series tracking showing consumption trends vs. moving averages.</p>
-    </div>
-</div>
+<img src='/images/fuel_cluster_chart.png' alt='Cluster Analysis' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+*Figure 3: Fuel consumption across clusters.*
 
+<img src='/images/fuel_time_series.png' alt='Time Series Analysis' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+*Figure 4: Time-series tracking showing consumption trends vs. moving averages.*
+
+The application visualizes predicted fuel consumption per cluster, as shown in Figure 3. This enables rapid identification of consumption patterns and highlights high-consumption clusters.
 ## Business Value
 *   **Cost Assurance:** The project identified discrepancies that helped secure approximately **84617 liters** of fuel.
     The time-series feature enables analysis of fuel consumption patterns, helping identify trends, seasonal variations, and unusual fuel consumption over time.
