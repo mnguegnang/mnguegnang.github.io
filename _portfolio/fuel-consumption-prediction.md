@@ -37,46 +37,64 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 ### 2. Engineering & Architecture (Flask)
 The project is a fully deployed web application on **Render.com**
 
-
-{% highlight text %} 
-fuel_prediction_app/
-├── columns_app.py              # Main application (191 lines)
-├── config.py                   # Configuration constants
-├── pkl_objects/
-│   └── filename.joblib         # Trained ML model
-├── uploads/                    # User uploaded files
-├── logs/                       # Application logs
-├── templates/                  # HTML templates
-├── utils/                      # Utility modules (7 modules)
-│   ├── file_utils.py           # File operations & validation
-│   ├── validation_utils.py     # Input & data validation
-│   ├── data_utils.py           # Caching & data management
-│   ├── model_utils.py          # Model loading & metadata
-│   ├── metrics_utils.py        # Performance metrics & NSE
-│   ├── chart_utils.py          # Chart generation (Pygal)
-│   └── export_utils.py         # Export functionality
-└── routes/                     # Route blueprints (3 modules)
-    ├── main_routes.py          # Main pages & prediction logic
-    ├── visualization_routes.py # Chart generation routes
-    └── export_routes.py        # Export/download routes
-{% endhighlight %}
-
-
-    {% comment %}
-    <div style="flex: 1; min-width: 250px;">
-        <img src='/images/fuel_file_structure.png' alt='Flask Project Structure' style='width: 100%; border: 1px solid #ddd; border-radius: 5px;'>
-    </div>
-    {% endcomment %}
+<!-- START ARCHITECTURE SECTION -->
+<div style="background-color: #f8f9fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 20px; margin-bottom: 20px;">
     
-    <div style="flex: 2; min-width: 300px;">
-        <p><strong>Modular Design Pattern:</strong><br>
-        As shown in the file structure, the codebase utilizes <br/><strong>Flask Blueprints</strong> (<code>routes/</code>) to decouple the API logic from the visualization logic.</p>
-        <ul>
-            <li><code>utils/</code>: Contains isolated modules for validation, feature engineering, and chart generation.</li>
-            <li><code>pkl_objects/</code>: Demonstrates efficient model serialization (Joblib) for fast inference on startup.</li>
-            <li><code>logs/</code>: Implements production logging for debugging the remote Render deployment.</li>
-        </ul>
+    <h3 style="margin-top: 0; border-bottom: 1px solid #eaecef; padding-bottom: 10px;">System Architecture</h3>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+        
+        <!-- LEFT COLUMN: FILE TREE -->
+        <div style="flex: 1; min-width: 300px;">
+            <div style="background: #2d333b; color: #adbac7; padding: 15px; border-radius: 6px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.85em; line-height: 1.4; overflow-x: auto; box-shadow: inset 0 0 10px rgba(0,0,0,0.2);">
+fuel_prediction_app/
+├── columns_app.py
+├── config.py
+├── pkl_objects/
+│   └── filename.joblib
+├── uploads/
+├── logs/
+├── templates/
+├── utils/
+│   ├── file_utils.py
+│   ├── validation_utils.py
+│   ├── data_utils.py
+│   ├── model_utils.py
+│   ├── metrics_utils.py
+│   ├── chart_utils.py
+│   └── export_utils.py
+└── routes/
+    ├── main_routes.py
+    ├── visualization_routes.py
+    └── export_routes.py
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: EXPLANATION -->
+        <div style="flex: 1; min-width: 280px;">
+            <p style="margin-top: 0;"><strong>Modular Design Pattern</strong><br>
+            The project uses a Production-Ready structure rather than a flat script. It utilizes <strong>Flask Blueprints</strong> to decouple API logic from visualization.</p>
+            
+            <ul style="padding-left: 20px;">
+                <li style="margin-bottom: 10px;">
+                    <code>utils/</code><br>
+                    <span style="font-size: 0.9em; color: #666;">Contains pure Python logic (validation, feature engineering) isolated from the web framework. This allows for unit testing without the Flask context.</span>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <code>routes/</code><br>
+                    <span style="font-size: 0.9em; color: #666;">Handles HTTP requests. By separating <em>Visualization</em> routes from <em>Export</em> routes, the codebase remains readable.</span>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <code>pkl_objects/</code><br>
+                    <span style="font-size: 0.9em; color: #666;">The Random Forest model is serialized using Joblib and loaded into memory <strong>once</strong> at startup, reducing inference latency.</span>
+                </li>
+            </ul>
+        </div>
+        
     </div>
+</div>
+<!-- END ARCHITECTURE SECTION -->
+
 
 *   **Dynamic Feature Mapping:** As seen in Figure 1, the UX allows users to map their dataset columns to the model’s inputs dynamically, accommodating inconsistent naming conventions in source files.
 *   **Interactive Visualization:** Integrated **Pygal** to generate lightweight SVG charts that users can interact with directly in the browser.
