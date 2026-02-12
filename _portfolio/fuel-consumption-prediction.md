@@ -37,7 +37,7 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 ### 2. Engineering & Architecture (Flask)
 The project is a fully deployed web application on **Render.com**
     
-<pre style="background: #f6f8fa; padding: 16px; border-radius: 6px; font-size: 0.85em; line-height: 1.45; overflow: auto;">
+<div style="background: #f6f8fa; padding: 16px; border-radius: 6px; font-size: 0.85em; line-height: 1.45; overflow: auto;">
 fuel_prediction_app/
 ├── columns_app.py              # Main application (191 lines)
 ├── config.py                   # Configuration constants
@@ -58,7 +58,7 @@ fuel_prediction_app/
     ├── main_routes.py          # Main pages & prediction logic
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
-</pre>
+</div>
 
     {% comment %}
     <div style="flex: 1; min-width: 250px;">
@@ -68,7 +68,7 @@ fuel_prediction_app/
     
     <div style="flex: 2; min-width: 300px;">
         <p><strong>Modular Design Pattern:</strong><br>
-        As shown in the file structure, the codebase utilizes <strong>Flask Blueprints</strong> (<code>routes/</code>) to decouple the API logic from the visualization logic.</p>
+        As shown in the file structure, the codebase utilizes <br/><strong>Flask Blueprints</strong> (<code>routes/</code>) to decouple the API logic from the visualization logic.</p>
         <ul>
             <li><code>utils/</code>: Contains isolated modules for validation, feature engineering, and chart generation.</li>
             <li><code>pkl_objects/</code>: Demonstrates efficient model serialization (Joblib) for fast inference on startup.</li>
