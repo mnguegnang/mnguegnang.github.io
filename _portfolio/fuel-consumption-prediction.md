@@ -24,7 +24,7 @@ This project addresses a key infrastructure challenge in Cameroon: managing exce
 In 2018, Machine Learning applications for remote areas that rely on the power generation plants were virtually non-existent. Most research focused on automotive engines.
 
 **Cross-domain methodology:** We adapted ML techniques from vehicle fuel consumption prediction to stationary power generation plants. This approach enabled us to develop one of the region’s first predictive maintenance systems for telecom base stations.
-<img src='/images/fuel-app-input-interface.png' alt='Main Application Interface' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+<img src='/images/fuel-app-input-interface.png' alt='Main Application Interface' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
 *Figure 1: The application GUI. Note the 'JSON API' integration and dynamic column mapping, allowing users to upload varied Excel formats without preprocessing.*
 
 ## Technical Solution
@@ -100,20 +100,38 @@ fuel_prediction_app/
 
 ## Data Visualization & Insights
 
-The application transforms raw Excel data into decision-support dashboards.
+The application offers a decision-support dashboard that translates model outputs through five interactive views, accessible from the top navigation bar. These views enable facility managers to analyze data by:
+*   **Cluster View:** Visualizes fuel consumption aggregated by region.
+*   **Site View (Top 20):** Instantly identifies the highest-consumption sites to help prioritize maintenance.
+*   **Distribution Analysis:** Uses histograms to display the spread of fuel usage.
+*   **Time Series:** Tracks consumption trends over time to visualize seasonal patterns.
 
-<img src='/images/fuel_cluster_chart.png' alt='Cluster Analysis' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
-*Figure 3: Fuel consumption across clusters.*
+<img src='/images/fuel_cluster_chart.png' alt='Cluster Analysis' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+*Figure 2: Fuel consumption across clusters.*
 
-<img src='/images/fuel_time_series.png' alt='Time Series Analysis' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
-*Figure 4: Time-series tracking showing consumption trends vs. moving averages.*
+<img src='/images/fuel_time_series.png' alt='Time Series Analysis' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+*Figure 3: Time-series tracking showing consumption trends vs. moving averages.*
 
 The application visualizes predicted fuel consumption per cluster, as shown in Figure 3. This enables rapid identification of consumption patterns and highlights high-consumption clusters.
+**On-Demand Export & Reporting**  
+To support external business workflows such as audits or executive presentations, the app includes a dedicated export engine. Users can download:
+*   **Raw Data:** CSV/Excel files for archival and further analysis.
+*   **Visual Assets:** High-resolution **SVG (Vector)** and **PNG** charts ready for insertion into PowerPoint or technical reports.
 ## Business Value
 *   **Cost Assurance:** The project identified discrepancies that helped secure approximately **84617 liters** of fuel.
     The time-series feature enables analysis of fuel consumption patterns, helping identify trends, seasonal variations, and unusual fuel consumption over time.
 *   **Logistics:** Enabled proactive fuel planning, reduced costly emergency deliveries.
 *   **Efficiency:** Automated log ingestion, reducing reporting time from days to seconds.
+
+## MLOps: Production Monitoring & Quality Assurance
+Unlike static models, this application features a System Monitoring Dashboard to ensure production reliability
+This dedicated interface provides real-time health checks on the ML pipeline:
+1.  **Model Performance:** Tracks the **NSE (0.981)** score on the current batch to ensure prediction accuracy remains high.
+2.  **System Health:** Monitors API success rates and processing latency.
+3.  **Cache Statistics:** Displays the status of the server-side caching engine, which is critical for preventing timeouts on the Render.com free tier when processing large datasets.
+
+<img src='/images/fuel_monitoring_dashboard.png' alt='System Monitoring Dashboard' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+*Figure 4: The Monitoring Dashboard. This internal view allows engineering teams to audit model metrics and verify that the data cache is active.*
 
 
 <a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>  <a href='https://ml-app-fuelprediction.onrender.com' class='btn btn--info'>Live App on Render</a>
