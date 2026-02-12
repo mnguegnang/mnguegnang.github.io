@@ -1,6 +1,6 @@
 ---
 title: "Intelligent Fuel Consumption & Warning System"
-excerpt: "A production-grade ML web app (Flask) for telecom power generation. Inspired by automotive predictive maintenance, it reduces fuel theft and optimizes logistics.<br/><img src='/images/fuel-app-input-interface.png' style='width: 100%; max-width: 600px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>"
+excerpt: "A production-grade ML web app (Flask) for telecom power generation. Inspired by automotive predictive maintenance, it reduces fuel theft and optimizes logistics.<br/><img src='/images/fuel-app-input-interface.png' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>"
 collection: portfolio
 ---
 
@@ -24,7 +24,7 @@ This project addresses a key infrastructure challenge in Cameroon: managing exce
 In 2018, Machine Learning applications for remote areas that rely on the power generation plants were virtually non-existent. Most research focused on automotive engines.
 
 **Cross-domain methodology:** We adapted ML techniques from vehicle fuel consumption prediction to stationary power generation plants. This approach enabled us to develop one of the region’s first predictive maintenance systems for telecom base stations.
-<img src='/images/fuel-app-input-interface.png' alt='Main Application Interface' style='width: 100%; max-width: 600px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+<img src='/images/fuel-app-input-interface.png' alt='Main Application Interface' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
 *Figure 1: The application GUI. Note the 'JSON API' integration and dynamic column mapping, allowing users to upload varied Excel formats without preprocessing.*
 
 ## Technical Solution
@@ -60,11 +60,12 @@ fuel_prediction_app/
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
 ```       
-    { %comment% }
+    { % comment % }
     <div style="flex: 1; min-width: 250px;">
         <img src='/images/fuel_file_structure.png' alt='Flask Project Structure' style='width: 100%; border: 1px solid #ddd; border-radius: 5px;'>
     </div>
-    {%endcomment% }
+    {% endcomment % }
+    
     <div style="flex: 2; min-width: 300px;">
         <p><strong>Modular Design Pattern:</strong><br>
         As shown in the file structure, the codebase utilizes <strong>Flask Blueprints</strong> (<code>routes/</code>) to decouple the API logic from the visualization logic.</p>
@@ -74,7 +75,6 @@ fuel_prediction_app/
             <li><code>logs/</code>: Implements production logging for debugging the remote Render deployment.</li>
         </ul>
     </div>
-</div>
 
 *   **Dynamic Feature Mapping:** As seen in Figure 1, the UX allows users to map their dataset columns to the model’s inputs dynamically, accommodating inconsistent naming conventions in source files.
 *   **Interactive Visualization:** Integrated **Pygal** to generate lightweight SVG charts that users can interact with directly in the browser.
