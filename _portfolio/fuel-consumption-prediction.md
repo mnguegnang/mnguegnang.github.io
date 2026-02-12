@@ -36,8 +36,9 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 *   **Deviation Warning System:** The system uses a threshold based on the mean plus two standard deviations. If consumption exceeds this threshold, the site is flagged for investigation. The team then verifies the alert and initiates necessary maintenance or logistics actions. This process ensures prompt response to deviations, reducing risks and improving operational efficiency.
 ### 2. Engineering & Architecture (Flask)
 The project is a fully deployed web application on **Render.com**
-    
-<div style="font-family: monospace; white-space: pre; background: #f6f8fa; padding: 15px; border-radius: 5px; overflow-x: auto; line-height: 1.5;">
+
+
+```text  
 fuel_prediction_app/
 ├── columns_app.py              # Main application (191 lines)
 ├── config.py                   # Configuration constants
@@ -58,7 +59,7 @@ fuel_prediction_app/
     ├── main_routes.py          # Main pages & prediction logic
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
-</div>
+
 
     {% comment %}
     <div style="flex: 1; min-width: 250px;">
