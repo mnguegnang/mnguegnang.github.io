@@ -1,6 +1,6 @@
 ---
 title: "Intelligent Fuel Consumption & Warning System"
-excerpt: "A production-grade ML web app (Flask) for telecom power generation. Inspired by automotive predictive maintenance, it reduces fuel theft and optimizes logistics.<br/><img src='/images/fuel-app-input-interface.png' style='width:100%; margin-top:10px; border:1px solid #eee;'><br/><a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>"
+excerpt: "A production-grade ML web app (Flask) for telecom power generation. Inspired by automotive predictive maintenance, it reduces fuel theft and optimizes logistics.<br/><img src='/images/fuel-app-input-interface.png' style='width: 100%; max-width: 500px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>"
 collection: portfolio
 ---
 
@@ -15,29 +15,27 @@ collection: portfolio
 ## Overview
 **Role:** End-to-End ML Engineer  
 **Stack:** Python, Flask, Scikit-Learn, Pygal, Pandas  
-**Deployment:** Live on **Render.com** (Dockerized)  
-**Impact:** Secured ~84,617 Liters of fuel; Reduced emergency deliveries by 75%.
+**Deployment:** Live on **Render.com**   
+**Impact:** Secured approximately 84617 liters of fuel and improved fuel consumption and logistics.
 
-This project addresses a critical infrastructure challenge in Cameroon: managing fuel logistics for telecommunication base stations powered by diesel generators. Due to electrical shortages, these stations rely on generators, making fuel pilferage (theft) and operational inefficiency major economic drains.
+This project addresses a key infrastructure challenge in Cameroon: managing excessive fuel consumption and logistics for telecom base stations powered by diesel generators. Frequent electrical shortages force reliance on generators, leading to high fuel use, pilferage, and operational inefficiencies that create significant economic burdens.
 
 ## The "First Mover" Challenge
-In 2018, Machine Learning applications in the power generation sector—specifically for remote, small-scale diesel generators—were virtually non-existent. Most research at the time focused on the automotive industry (car engines).
+In 2018, Machine Learning applications for remote areas that rely on the power generation plants were virtually non-existent. Most research focused on automotive engines.
 
-**Innovation:** We applied a **cross-domain transfer of methodology**. We studied ML techniques used for predicting fuel consumption in vehicles and adapted those feature engineering principles to stationary power plants. This allowed us to build one of the region's first predictive maintenance systems for telecom infrastructure.
-
-<img src='/images/fuel_interface_main.png' alt='Main Application Interface' style='width: 100%; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>
+**Cross-domain methodology:** We adapted ML techniques from vehicle fuel consumption prediction to stationary power generation plants. This approach enabled us to develop one of the region’s first predictive maintenance systems for telecom base stations.
+<img src='/images/fuel-app-input-interface.png' alt='Main Application Interface'  width='621' height='580'; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);'>
 *Figure 1: The application GUI. Note the 'JSON API' integration and dynamic column mapping, allowing users to upload varied Excel formats without preprocessing.*
 
 ## Technical Solution
 
 ### 1. The Machine Learning Core
-We approached the problem by establishing a "baseline of truth" for consumption.
+We addressed the problem by establishing a baseline for accurate fuel consumption.
 *   **Algorithm:** Random Forest Regressor (Scikit-Learn).
 *   **Performance:** Achieved a **Nash-Sutcliffe Efficiency (NSE) of 0.986**.
-*   **Deviation Warning System:** Unlike dedicated anomaly detection algorithms (like Isolation Forests), this system uses a threshold-based approach. It compares the *Predicted Consumption* (what the generator *should* have used based on load/hours) against the *Actual Reported Consumption*. If the deviation exceeds a statistical threshold, the site is flagged for manual inspection.
-
+*   **Deviation Warning System:** The system uses a threshold based on the mean plus two standard deviations. If consumption exceeds this threshold, the site is flagged for investigation. The team then verifies the alert and initiates necessary maintenance or logistics actions. This process ensures prompt response to deviations, reducing risks and improving operational efficiency.
 ### 2. Engineering & Architecture (Flask)
-This is not a monolithic script; it is a modular web application deployed on **Render.com**.
+The project is a fully deployed web application on **Render.com**
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-bottom: 20px;">
     <div style="flex: 1; min-width: 250px;">
@@ -54,12 +52,12 @@ This is not a monolithic script; it is a modular web application deployed on **R
     </div>
 </div>
 
-*   **Dynamic Feature Mapping:** The app handles inconsistent Excel headers dynamically, preventing pipeline failures.
+*   **Dynamic Feature Mapping:** As seen in Figure 1, the UX allows users to map their dataset columns to the model’s inputs dynamically, accommodating inconsistent naming conventions in source files.
 *   **Interactive Visualization:** Integrated **Pygal** to generate lightweight SVG charts that users can interact with directly in the browser.
 
 ## Data Visualization & Insights
 
-The application transforms raw Excel rows into decision-support dashboards.
+The application transforms raw Excel data into decision-support dashboards.
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
     <div style="flex: 1; min-width: 300px;">
@@ -73,8 +71,10 @@ The application transforms raw Excel rows into decision-support dashboards.
 </div>
 
 ## Business Value
-*   **Cost Assurance:** The "Deviation Warning" system successfully identified discrepancies contributing to the security of **~84,617 liters** of fuel.
-*   **Logistics:** Enabled proactive fuel planning, reducing expensive emergency fuel deliveries by an estimated **75%**.
-*   **Efficiency:** Automated the ingestion of logs, reducing reporting time from days to seconds.
+*   **Cost Assurance:** The project identified discrepancies that helped secure approximately **84617 liters** of fuel.
+    The time-series feature enables analysis of fuel consumption patterns, helping identify trends, seasonal variations, and unusual fuel consumption over time.
+*   **Logistics:** Enabled proactive fuel planning, reduced costly emergency deliveries.
+*   **Efficiency:** * Automated log ingestion, reducing reporting time from days to seconds.
 
-[Link to GitHub Repository] | [Link to Live App on Render]
+
+<a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a> [Link to GitHub Repository] | [Link to Live App on Render]
