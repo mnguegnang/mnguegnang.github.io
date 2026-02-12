@@ -130,7 +130,7 @@ This dedicated interface provides real-time health checks on the ML pipeline:
 2.  **System Health:** Monitors API success rates and processing latency.
 3.  **Cache Statistics:** Displays the status of the server-side caching engine, which is critical for preventing timeouts on the Render.com free tier when processing large datasets.
 
-<img src='/images/fuel_monitoring_dashboard.png' alt='System Monitoring Dashboard' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+<img src='/images/dashboard_system_monitoring.png' alt='System Monitoring Dashboard' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
 *Figure 4: The Monitoring Dashboard. This internal view allows engineering teams to audit model metrics and verify that the data cache is active.*
 
 
