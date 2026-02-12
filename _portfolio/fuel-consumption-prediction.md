@@ -37,7 +37,7 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 ### 2. Engineering & Architecture (Flask)
 The project is a fully deployed web application on **Render.com**
     
-<div style="background: #f6f8fa; padding: 16px; border-radius: 6px; font-size: 0.85em; line-height: 1.45; overflow: auto;">
+<div style="font-family: monospace; white-space: pre; background: #f6f8fa; padding: 15px; border-radius: 5px; overflow-x: auto; line-height: 1.5;">
 fuel_prediction_app/
 ├── columns_app.py              # Main application (191 lines)
 ├── config.py                   # Configuration constants
