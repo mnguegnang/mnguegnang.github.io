@@ -37,7 +37,7 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 ### 2. Engineering & Architecture (Flask)
 The project is a fully deployed web application on **Render.com**
     
-```text
+<pre style="background: #f6f8fa; padding: 16px; border-radius: 6px; font-size: 0.85em; line-height: 1.45; overflow: auto;">
 fuel_prediction_app/
 ├── columns_app.py              # Main application (191 lines)
 ├── config.py                   # Configuration constants
@@ -58,13 +58,14 @@ fuel_prediction_app/
     ├── main_routes.py          # Main pages & prediction logic
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
-      
+</pre>
+
     {% comment %}
     <div style="flex: 1; min-width: 250px;">
         <img src='/images/fuel_file_structure.png' alt='Flask Project Structure' style='width: 100%; border: 1px solid #ddd; border-radius: 5px;'>
     </div>
     {% endcomment %}
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-bottom: 20px;">
+    
     <div style="flex: 2; min-width: 300px;">
         <p><strong>Modular Design Pattern:</strong><br>
         As shown in the file structure, the codebase utilizes <strong>Flask Blueprints</strong> (<code>routes/</code>) to decouple the API logic from the visualization logic.</p>
@@ -74,7 +75,6 @@ fuel_prediction_app/
             <li><code>logs/</code>: Implements production logging for debugging the remote Render deployment.</li>
         </ul>
     </div>
-</div>
 
 *   **Dynamic Feature Mapping:** As seen in Figure 1, the UX allows users to map their dataset columns to the model’s inputs dynamically, accommodating inconsistent naming conventions in source files.
 *   **Interactive Visualization:** Integrated **Pygal** to generate lightweight SVG charts that users can interact with directly in the browser.
