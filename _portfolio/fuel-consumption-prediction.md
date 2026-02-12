@@ -44,9 +44,9 @@ The project is a fully deployed web application on **Render.com**
     
     <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
         
-        <!-- LEFT COLUMN: FILE TREE (Fixed with white-space: pre) -->
+        <!-- LEFT COLUMN: FILE TREE (Fixed with <pre> tag) -->
         <div style="flex: 1; min-width: 300px;">
-            <div style="background: #2d333b; color: #adbac7; padding: 15px; border-radius: 6px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.85em; line-height: 1.4; overflow-x: auto; white-space: pre; box-shadow: inset 0 0 10px rgba(0,0,0,0.2);">
+<pre style="background: #2d333b; color: #adbac7; padding: 15px; border-radius: 6px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.85em; line-height: 1.4; margin: 0; overflow-x: auto; white-space: pre; border: none;">
 fuel_prediction_app/
 ├── columns_app.py
 ├── config.py
@@ -67,7 +67,7 @@ fuel_prediction_app/
     ├── main_routes.py
     ├── visualization_routes.py
     └── export_routes.py
-            </div>
+</pre>
         </div>
 
         <!-- RIGHT COLUMN: EXPLANATION -->
@@ -94,7 +94,6 @@ fuel_prediction_app/
     </div>
 </div>
 <!-- END ARCHITECTURE SECTION -->
-
 
 *   **Dynamic Feature Mapping:** As seen in Figure 1, the UX allows users to map their dataset columns to the model’s inputs dynamically, accommodating inconsistent naming conventions in source files.
 *   **Interactive Visualization:** Integrated **Pygal** to generate lightweight SVG charts that users can interact with directly in the browser.
