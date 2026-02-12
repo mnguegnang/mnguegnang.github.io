@@ -38,7 +38,7 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 The project is a fully deployed web application on **Render.com**
 
 
-```text  
+{% highlight text %} 
 fuel_prediction_app/
 ├── columns_app.py              # Main application (191 lines)
 ├── config.py                   # Configuration constants
@@ -59,6 +59,7 @@ fuel_prediction_app/
     ├── main_routes.py          # Main pages & prediction logic
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
+{% endhighlight %}
 
 
     {% comment %}
@@ -99,7 +100,7 @@ The application transforms raw Excel data into decision-support dashboards.
 *   **Cost Assurance:** The project identified discrepancies that helped secure approximately **84617 liters** of fuel.
     The time-series feature enables analysis of fuel consumption patterns, helping identify trends, seasonal variations, and unusual fuel consumption over time.
 *   **Logistics:** Enabled proactive fuel planning, reduced costly emergency deliveries.
-*   **Efficiency:** * Automated log ingestion, reducing reporting time from days to seconds.
+*   **Efficiency:** Automated log ingestion, reducing reporting time from days to seconds.
 
 
 <a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>  <a href='https://ml-app-fuelprediction.onrender.com' class='btn btn--info'>Live App on Render</a>
