@@ -60,11 +60,11 @@ fuel_prediction_app/
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
 ```       
-    { % comment % }
+    {% comment %}
     <div style="flex: 1; min-width: 250px;">
         <img src='/images/fuel_file_structure.png' alt='Flask Project Structure' style='width: 100%; border: 1px solid #ddd; border-radius: 5px;'>
     </div>
-    {% endcomment % }
+    {% endcomment %}
     
     <div style="flex: 2; min-width: 300px;">
         <p><strong>Modular Design Pattern:</strong><br>
