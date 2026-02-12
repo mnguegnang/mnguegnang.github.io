@@ -44,9 +44,9 @@ The project is a fully deployed web application on **Render.com**
     
     <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
         
-        <!-- LEFT COLUMN: FILE TREE -->
+        <!-- LEFT COLUMN: FILE TREE (Fixed with white-space: pre) -->
         <div style="flex: 1; min-width: 300px;">
-            <div style="background: #2d333b; color: #adbac7; padding: 15px; border-radius: 6px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.85em; line-height: 1.4; overflow-x: auto; box-shadow: inset 0 0 10px rgba(0,0,0,0.2);">
+            <div style="background: #2d333b; color: #adbac7; padding: 15px; border-radius: 6px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.85em; line-height: 1.4; overflow-x: auto; white-space: pre; box-shadow: inset 0 0 10px rgba(0,0,0,0.2);">
 fuel_prediction_app/
 ├── columns_app.py
 ├── config.py
