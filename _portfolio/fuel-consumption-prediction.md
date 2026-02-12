@@ -36,9 +36,8 @@ We addressed the problem by establishing a baseline for accurate fuel consumptio
 *   **Deviation Warning System:** The system uses a threshold based on the mean plus two standard deviations. If consumption exceeds this threshold, the site is flagged for investigation. The team then verifies the alert and initiates necessary maintenance or logistics actions. This process ensures prompt response to deviations, reducing risks and improving operational efficiency.
 ### 2. Engineering & Architecture (Flask)
 The project is a fully deployed web application on **Render.com**
-
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-bottom: 20px;">
-```:
+    
+```text
 fuel_prediction_app/
 ├── columns_app.py              # Main application (191 lines)
 ├── config.py                   # Configuration constants
@@ -59,13 +58,13 @@ fuel_prediction_app/
     ├── main_routes.py          # Main pages & prediction logic
     ├── visualization_routes.py # Chart generation routes
     └── export_routes.py        # Export/download routes
-```       
+      
     {% comment %}
     <div style="flex: 1; min-width: 250px;">
         <img src='/images/fuel_file_structure.png' alt='Flask Project Structure' style='width: 100%; border: 1px solid #ddd; border-radius: 5px;'>
     </div>
     {% endcomment %}
-    
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-bottom: 20px;">
     <div style="flex: 2; min-width: 300px;">
         <p><strong>Modular Design Pattern:</strong><br>
         As shown in the file structure, the codebase utilizes <strong>Flask Blueprints</strong> (<code>routes/</code>) to decouple the API logic from the visualization logic.</p>
@@ -75,6 +74,7 @@ fuel_prediction_app/
             <li><code>logs/</code>: Implements production logging for debugging the remote Render deployment.</li>
         </ul>
     </div>
+</div>
 
 *   **Dynamic Feature Mapping:** As seen in Figure 1, the UX allows users to map their dataset columns to the model’s inputs dynamically, accommodating inconsistent naming conventions in source files.
 *   **Interactive Visualization:** Integrated **Pygal** to generate lightweight SVG charts that users can interact with directly in the browser.
@@ -101,4 +101,4 @@ The application transforms raw Excel data into decision-support dashboards.
 *   **Efficiency:** * Automated log ingestion, reducing reporting time from days to seconds.
 
 
-<a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a> | <a href='https://ml-app-fuelprediction.onrender.com' class='btn btn--info'>Live App on Render</a>
+<a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>  <a href='https://ml-app-fuelprediction.onrender.com' class='btn btn--info'>Live App on Render</a>
