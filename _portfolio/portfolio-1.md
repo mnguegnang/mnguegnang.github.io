@@ -1,6 +1,6 @@
 ---
 title: "Analysis of Training Neural Networks"
-excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png' width='600' height='500' style='object-fit: contain;'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN' class='btn btn--info'>View code</a>"
+excerpt: "Global convergence of GD for training neural networks<br/><img src='/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png' style='width: 100%; max-width: 600px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/mnguegnang/DNN_project/tree/master/GD_for_DNN' class='btn btn--info'>View code</a>"
 collection: portfolio
 ---
 
@@ -11,7 +11,7 @@ Training neural networks involves optimizing a nonconvex loss function with resp
 A critical component of the analysis is the development of a norm-based bound on GD to address the exploding gradient problem. The boundedness of GD is subsequently used to establish a fundamental property of iterative descent methods, demonstrating that GD satisfies the requirements of the discrete version of Lojasiewicz's theorem. The plots below depict the evolution of the overparameterized weight matrices for the three networks throughout training.
 
 <figure>
-    <img src="/images/Parameterized_matrix_norms_comparison_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Boundedness" width='720' height='600' style='object-fit: contain;'>
+    <img src="/images/Parameterized_matrix_norms_comparison_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Boundedness" style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
     <figcaption>Figure 1: Boundedness of the overparameterized matrix across networks.</figcaption>
 </figure>
 {% comment %}
@@ -23,8 +23,8 @@ A critical component of the analysis is the development of a norm-based bound on
 This work studies the convergence properties of GD for training deep neural networks and demonstrates  that GD converges to a global minimizer for almost all initializations. Empirical results further prove that the theoretical findings on learning rate and convergence generalize to common nonlinear networks, thereby validating these principles in broader deep learning architectures.
 
 <figure class="half">
-    <img src="/images/Loss_evolution_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Linear network" width="700">
-    <img src="/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png" alt="Nonlinear networks" width="700">
+    <img src="/images/Loss_evolution_linear_constantetak_linear_d70_r35_stepsize0_00003_epochs1000000.png" alt="Linear network" style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
+    <img src="/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png" alt="Nonlinear networks" style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
     <figcaption><em>Figure 2: Global convergence of GD for training linear neural networks on the left panel and nonlinear networks on the right panel.</em></figcaption>
 </figure>
 
@@ -39,4 +39,5 @@ This work studies the convergence properties of GD for training deep neural netw
 
 
 This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.
+width='600' height='500' style='object-fit: contain;'
 {% endcomment %}
