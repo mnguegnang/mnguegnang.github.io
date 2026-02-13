@@ -22,5 +22,5 @@ package-lock.json
 # Ignore files created by MacOS
 .DS_Store
 
-# Ignore the following file
-2025-10-01-paper-title-number-3.md
+# Ignore the following file from publication folder
+_publications/2025-10-01-paper-title-number-3.md
