@@ -8,7 +8,7 @@ date: 2024-07-18
 venue: 'Springer Nature: Advances in Continuous and Discrete Models
 Theory and Modern Applications'
 #slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: '[https://academicpages.github.io/files/paper2.pdf](https://link.springer.com/content/pdf/10.1186/s13662-023-03797-x.pdf)'
+paperurl: 'https://doi.org/10.1186/s13662-023-03797-x' #'https://academicpages.github.io/files/paper2.pdf'
 #citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
 
