@@ -9,7 +9,7 @@ venue: 'Applied Artificial Intelligence'
 #slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://doi.org/10.1080/08839514.2019.1691839' #'https://academicpages.github.io/files/paper1.pdf'
 #bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+#citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
 Reliable electricity supply is critical for industrial operations. In Cameroon, frequent load shedding has led the telecom industry to rely on backup power sources, particularly diesel generators. Managing fuel consumption for these generators is challenging due to inaccuracies in mechanical fuel level gauges and inadequate maintenance at base stations, which may result in fuel pilferage and excessive consumption.
