@@ -1,6 +1,6 @@
 ---
 title: "Intelligent Fuel Consumption & Warning System"
-excerpt: "A production-grade ML web app (Flask) for telecom power generation. Inspired by automotive predictive maintenance, it reduces fuel theft and optimizes logistics.<br/><img src='/images/ML-fuel-app.gif' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>"
+excerpt: "A production-grade ML web app (Flask) for telecom power generation. Inspired by automotive predictive maintenance, it reduces fuel theft and optimizes logistics.<br/><img src='/images/ml_fuel_app.gif' style='width: 100%; max-width: 650px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/mnguegnang/ML-app-fuelprediction.git' class='btn btn--info'>View Code</a>"
 collection: portfolio
 ---
 
@@ -12,8 +12,7 @@ collection: portfolio
 ---
 {% endcomment %} 
 
-## Overview
-**Role:** End-to-End ML Engineer  
+## Overview 
 **Stack:** Python, Flask, Scikit-Learn, Pygal, Pandas  
 **Deployment:** Live on **Render.com**   
 **Impact:** Secured approximately 84617 liters of fuel and improved fuel consumption and logistics.
