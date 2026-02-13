@@ -7,7 +7,7 @@ excerpt: 'This paper applies machine learning and neural networks to analyze dat
 date: 2020-11-19
 venue: 'Applied Artificial Intelligence'
 #slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
+paperurl: 'https://doi.org/10.1080/08839514.2019.1691839' #'https://academicpages.github.io/files/paper1.pdf'
 #bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
