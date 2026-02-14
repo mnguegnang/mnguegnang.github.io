@@ -3,9 +3,11 @@
 title: "Professional Experience"
 permalink: /experience/
 author_profile: true
-layout: single
-classes: wide
+collection: experience
+#layout: single
+#classes: wide
 ---
+
 
 ## **Applied Mathematics Consultant for AI Model Training**
 **Outlier AI & Mercor** | *Remote, Germany*
