@@ -1,56 +1,82 @@
 
+---
+title: "Professional Experience"
+permalink: /experience/
+author_profile: true
+layout: single
+classes: wide
+---
+
 ## **Applied Mathematics Consultant for AI Model Training**
 **Outlier AI & Mercor** | *Remote, Germany*
-*October 2025 - Present*
+*Oct 2023 - Present*
 
-Specializing in **Reinforcement Learning from Human Feedback (RLHF)** and **Agentic AI** workflows to align Large Language Models (LLMs) with complex STEM reasoning.
+**Core Mission:** Stress-testing frontier models to expose critical reasoning and agentic failures, engineering math-grounded solutions that bridge performance gaps in specialized STEM domains.
 
-*   **RLHF & Model Alignment:** Conducted error analysis on agent trajectories to diagnose function-calling failures, directly improving model reliability in multi-step reasoning tasks.
-*   **Prompt Engineering:** Designed Chain-of-Thought (CoT) frameworks that transformed abstract mathematical concepts into ground-truth training data.
-*   **Cross-Functional Collaboration:** Partnered with development teams to design evaluation rubrics, ensuring models meet strict industry standards for reasoning and safety.
-*   **Leadership:** Reviewed peer contributions and mentored junior annotators on advanced prompt engineering strategies.
+**Key Technical Achievements:**
+*   **Advanced Alignment Strategy (RLHF & RLVR):**
+    *   Leveraged **Reinforcement Learning from Human Feedback (RLHF)** and **Verifiable Rewards (RLVR)** to align model behavior with complex human intent.
+    *   Systematically identified failure modes in logic and agent trajectories to design rigorous training frameworks.
+*   **Reasoning Enhancement via Chain-of-Thought:**
+    *   Designed research-oriented prompts utilizing **Chain-of-Thought (CoT)** frameworks.
+    *   Transformed abstract mathematical concepts into reliable ground-truth data, significantly improving model reasoning capabilities in high-level STEM tasks.
+*   **Agentic AI & Error Analysis:**
+    *   Conducted deep analysis of agent trajectories to assess alignment with user requests.
+    *   Evaluated **Function Calling precision** (e.g., detecting "Trigger Phrases") and classified execution results to diagnose failures in multi-step reasoning.
+*   **Evaluation & Peer Review:**
+    *   Designed detailed rubrics and reviewed peer contributions to ensure prompt engineering strategies met strict industry standards.
 
-**Tech Stack:** Python, LLMs, RLHF, RLVR, Chain-of-Thought, Labeling Platforms.
+**Tech Stack:** Python, RLHF, LLMs, Prompt Engineering, Agentic Workflows.
 
 ---
 
 ## **Doctoral Research Scientist (PhD)**
 **Ludwig Maximilian University of Munich (LMU)** | *Munich, Germany*
-*April 2024 - 2025*
+*Apr 2024 - Sep 2025*
 
-Developed interpretable ML frameworks for industrial power management, bridging the gap between non-convex optimization theory and practical deep learning deployment.
+**Research Focus: Deep Learning Optimization**
+Provided theoretical and practical insights into **Stochastic Gradient Descent (SGD)**, the backbone of modern deep learning.
+*   **Algorithm Dynamics:** Analyzed numerical descent dynamics to develop effective initialization and adaptive learning rate strategies.
+*   **Convergence Proofs:** Established convergence properties of SGD for linear neural networks, validating theoretical findings through experiments on linear and nonlinear architectures.
+*   **HPC Implementation:** Leveraged **High-Performance Computing (HPC)** clusters to scale model training, translating theoretical research into production-ready insights.
 
-*   **Anomaly Detection:** Built an ML-based framework balancing accuracy and fairness for power generation plants, enabling explainable AI (XAI) solutions.
-*   **Optimization Research:** Analyzed stochastic gradient descent (SGD) convergence, deriving optimal parameter initializations and adaptive learning rate schedules to reduce training time.
-*   **HPC Engineering:** Leveraged High-Performance Computing clusters to train deep neural networks on synthetic and real-world datasets, validating theoretical robustness.
-*   **Teaching:** Conducted tutorials on the Mathematical Foundations of Deep Learning for data scientists.
+**Parallel Project: Industrial Anomaly Detection**
+*   **Applied ML:** Developed an ML-based anomaly detection framework for power generation plants.
+*   **Impact:** Balanced accuracy with interpretability, enabling **Explainable AI (XAI)** solutions for industrial stakeholders.
 
-**Tech Stack:** PyTorch, Scikit-Learn, HPC (Slurm), Docker, Python.
+**Teaching & Technical Communication:**
+*   **Lecturer/Tutor:** Taught "Mathematical Foundations of Machine Learning, Deep Learning, and Optimization."
+*   **Impact:** Translated complex theoretical concepts into actionable knowledge for data science students.
+
+**Tech Stack:** PyTorch, Python, Scikit-Learn, HPC (Slurm), Docker.
 
 ---
 
 ## **Doctoral Researcher**
 **RWTH Aachen University** | *Aachen, Germany*
-*September 2019 - March 2024*
+*Sep 2019 - Mar 2024*
 
-Focused on the global convergence of gradient-based methods for deep neural networks.
+Focused on the mathematical foundations of deep learning and global convergence strategies.
 
-*   **Deep Learning Theory:** Proved global convergence for gradient descent in linear neural networks, contributing to the theoretical understanding of non-convex optimization.
-*   **Algorithm Analysis:** Analyzed gradient-based methods under constant and decreasing learning rates to improve model stability.
-*   **Mentorship:** Taught continuous optimization and mathematics of data science to engineering students.
+*   **Global Convergence:** Established the convergence of gradient descent to a global minimum for learning neural networks with both constant and non-constant learning rates.
+*   **Training Optimization:** Developed novel strategies for parameter initialization and learning rate selection in linear neural networks.
+*   **Scientific Contribution:** My research complemented existing work on the mathematical foundations of deep learning, providing valuable insights into the training process stability.
 
-**Tech Stack:** Python, LaTeX, Matlab, Bash.
+**Teaching & Mentorship:**
+*   Conducted exercise classes for: *Mathematical Foundations of Machine Learning*, *Deep Learning*, *Data Science*, and *Optimization*.
+
+**Tech Stack:** Python, Matlab, LaTeX, Bash.
 
 ---
 
 ## **Machine Learning Engineer (Intern)**
 **Group One Holding Company** | *Limbe, Cameroon*
-*June 2018 - May 2019*
+*Jun 2018 - May 2019*
 
-Deployed predictive models to optimize fuel consumption in telecommunication infrastructure.
+**Project:** Fuel Consumption Optimization & Anomaly Detection.
 
-*   **End-to-End Deployment:** Trained and deployed neural networks into a web application, facilitating real-time visualization of fuel consumption.
-*   **Business Impact:** The solution monitored anomalies in fuel data with the potential to secure up to **84,617 liters** of fuel annually.
-*   **Data Engineering:** Synchronized local and remote repositories using Git to maintain secure code history for the production pipeline.
+*   **Business Impact:** Trained Machine Learning models (including Neural Networks) that contributed to potentially securing approximately **84,617 liters** of fuel annually.
+*   **Full-Stack Deployment:** Deployed predictive models into a web application to facilitate real-time visualization and monitoring of fuel consumption at each base station.
+*   **Anomaly Detection:** Applied ML techniques to limit fuel pilferage in telecommunication base stations by optimizing consumption data analysis.
 
-**Tech Stack:** Python, Flask (Web App), Git, Neural Networks.
+**Tech Stack:** Python, Flask (Web App), Git, Scikit-Learn, SQL.
