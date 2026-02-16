@@ -3,7 +3,8 @@ title: "RWTH Aachen University"
 collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/20-24-RWTH-teaching
-venue: "RWTH, Department of Mathematics (2020 - 2024)"
+venue: "RWTH, Department of Mathematics"
+date: 2020-09-15
 location: "Aachen, Germany"
 ---
 
