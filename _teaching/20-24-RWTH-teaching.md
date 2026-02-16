@@ -3,15 +3,14 @@ title: "RWTH Aachen University"
 collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/20-24-RWTH-teaching
-venue: "RWTH, Department of Mathematics"
-#date: 2014-01-01
+venue: "RWTH, Department of Mathematics (2020 - 2024)"
+# date: 2014-01-01
 location: "Aachen, Germany"
 ---
 
 At RWTH, I taught courses ranging from foundational engineering mathematics to specialized topics in algorithmic, data science, and  optimization. My responsibilities included designing exercise sheets, leading tutorials, and grading exams
 
-## Specialized Optimization & Mathematics for Data Science
-======
+## Specialized Optimization & Mathematics for Data Science 
 **Mathematics for Data Science**
 
 *   *Winter Semester (Oct 2022 – Mar 2023)*
@@ -28,7 +27,6 @@ At RWTH, I taught courses ranging from foundational engineering mathematics to s
 *   **Key Topics:** Primal-dual methods, barrier functions, and path-following algorithms for linear and quadratic programming.
 
 ## Foundational Engineering Mathematics
-======
 **Higher Mathematics I, II, & III**
 
 *   *HM II:* Winter Semester (Oct 2023 – Mar 2024)
