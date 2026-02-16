@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI & Post-training strategies"
-excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'><br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>"
+excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
 collection: portfolio
 ---
 
@@ -41,6 +41,7 @@ style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px
 ## Methodology Repository
 Since the specific models and data are proprietary, I have published a repository containing **demonstration templates** of the rubrics and prompting strategies I employ.
 [View the Methodology on GitHub](https://github.com/YOUR_USERNAME/llm-reasoning-alignment)
+<br/><a href='https://github.com/YOUR_USERNAME/llm-reasoning-alignment' class='btn btn--info'>View Methodology</a>
 {% endcomment %}
 
 
