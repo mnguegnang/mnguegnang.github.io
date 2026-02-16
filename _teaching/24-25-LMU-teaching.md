@@ -19,3 +19,5 @@ Optimization
 ======
 *   *Summer Semester (Apr 2024 – Jul 2024)
 *   **Key Topics:** First and second order methods for unconstrained optimization, including gradient descent, Newton’s method, line search strategies, convergence rates of first-order methods, and constrained optimization.
+
+  **Curriculum Design:** Translated complex theoretical proofs, such as global convergence of SGD, into accessible tutorials for students from diverse backgrounds.
