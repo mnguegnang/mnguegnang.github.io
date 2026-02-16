@@ -3,7 +3,8 @@ title: "Ludwig Maximilian University of Munich (LMU)"
 collection: teaching
 type: "Graduate Teaching Assistant"
 permalink: /teaching/24-25-LMU-teaching
-venue: "LMU, Department of Mathematics (2024 - 2025)"
+venue: "LMU, Department of Mathematics"
+date: 2024-04-01
 location: "Munich, Germany"
 ---
 
