@@ -4,7 +4,6 @@ collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/20-24-RWTH-teaching
 venue: "RWTH, Department of Mathematics (2020 - 2024)"
-# date: 2014-01-01
 location: "Aachen, Germany"
 ---
 
@@ -33,6 +32,8 @@ At RWTH, I taught courses ranging from foundational engineering mathematics to s
 *   *HM I:* Summer Semester (Apr 2023 – Jul 2023) 
 *   *HM III:* Winter Semester (Oct 2021 – Mar 2022)
 *   *HM II:* Summer Semester (Apr 2021 – Jul 2021)
-*   **Scope:** Advanced calculus, differential equations (ODEs/PDEs), vector analysis, and complex analysis for engineers
+*   **Scope:** Advanced calculus, differential equations (ODEs/PDEs), vector analysis, and complex analysis for engineers.
+  
 **Technical Contribution:** Developed algorithmic, randomized exercises for the Dynexite platform, enabling automated testing and immediate feedback for cohorts of over 500 students.
+
 **Impact:** Digitized complex calculus and linear algebra problems, ensuring assessment integrity and scalability during hybrid learning.
