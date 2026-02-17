@@ -1,13 +1,9 @@
 ---
 title: "Professional Experience"
-permalink: / #/experience/
+permalink: /experience/
 author_profile: true
-redirect_from:
-  - /experience/
-  - /experience.md
-#collection: experience
-#layout: single
-#classes: wide
+layout: single
+classes: wide
 ---
 
 ## **Applied Mathematics Consultant for AI Model Training**
