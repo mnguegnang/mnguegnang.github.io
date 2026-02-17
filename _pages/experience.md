@@ -28,7 +28,7 @@ classes: wide
 ---
 
 ## **Doctoral Research Assistant**
-**Ludwig Maximilian University of Munich (LMU)** | *Munich, Germany*
+**Ludwig Maximilian University (LMU) of Munich** | *Munich, Germany*
 *Apr 2024 - Sep 2025*
 
 **Research Focus: Deep Learning Optimization**
