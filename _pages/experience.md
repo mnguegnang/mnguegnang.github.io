@@ -23,6 +23,7 @@ classes: wide
     *   Evaluated function calling precision, such as detecting “Trigger Phrases,” and classified execution results to diagnose failures in multi-step reasoning.
 *   **Evaluation & Peer Review:**
     *   Created detailed rubrics and reviewed peer contributions to ensure prompt engineering strategies met industry standards.
+      
 **Tech Stack:** Python, RLHF, LLMs, Prompt Engineering, Agentic Workflows.
 
 ---
@@ -57,8 +58,10 @@ Focused on the mathematical foundations of deep learning and global convergence 
 *   **Global Convergence:** Established the convergence of gradient descent to a global minimum for learning neural networks with both constant and non-constant learning rates.
 *   **Training Optimization:** Developed novel strategies for parameter initialization and learning rate selection in linear neural networks.
 *   **Scientific Contribution:** My research complemented existing work on the mathematical foundations of deep learning, providing insights into training stability. Notably, the maximum permissible step size does not decrease exponentially with network depth. Empirical results show that exceeding prescribed learning rate bounds can lead to training failure.
+  
 **Teaching & Mentorship:**
 *   **Teaching Assistant:** Led exercise classes for "Mathematical Foundations of Machine Learning, Deep Learning, Data Science, and Optimization".
+  
 **Tech Stack:** Python, Matlab, LaTeX, Bash.
 
 ---
