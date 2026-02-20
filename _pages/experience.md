@@ -11,6 +11,7 @@ classes: wide
 *Oct 2025 - Present*
 
 **Post Training Strategies:** Stress-test advanced models to identify reasoning and agentic failures, and apply mathematical logic in prompt engineering to address performance gaps in specialized STEM domains. I focus on three principal methods: Reinforcement Learning from Human Feedback (RLHF), Reinforcement Learning with Verifiable Rewards (RLVR), and rubric-based evaluation.
+
 **Key Technical Achievements:**
 *   **Advanced Alignment Strategy (RLHF & RLVR):**
     *   Used RLHF and RLVR to align model behavior for specialized real-world tasks.
@@ -37,6 +38,7 @@ Provided theoretical and practical insights into **Stochastic Gradient Descent (
 *   **Algorithm Dynamics:** Analyzed numerical descent dynamics to develop effective initialization and adaptive learning rate strategies.
 *   **SGD Training Properties:** Established convergence properties of SGD for linear neural networks and validated findings through experiments on linear and nonlinear architectures.
 *   **HPC Implementation:** Used **High-Performance Computing (HPC)** clusters to scale model training and translate theoretical research into production-ready insights.
+  
 **Parallel Project: Industrial Anomaly Detection**
 *   **Applied ML:** Developed an ML-based anomaly detection framework for power generation plants.
 *   **Impact:** Balanced accuracy and interpretability in Explainable AI (XAI) solutions for industrial stakeholders, improving decision-making by providing clarity and transparency in model predictions and increasing stakeholder confidence in AI systems.
