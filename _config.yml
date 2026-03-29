@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" #recommended choice "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "G. M. Nguegnang | AI Research Scientist and ML Engineer | LLM Alignment, Deep Learning, Optimization" #Your Name / Site Title
+title                    : "G. M. Nguegnang | AI Research Scientist and ML Engineer |<br> LLM Alignment, Deep Learning, Optimization" #Your Name / Site Title
 title_separator          : "-"
 name                     : &name "Gabin Maxime Nguegnang"
 description              : &description "PhD Researcher bridging Mathematical Optimization and practical AI in production. Expertise post-training strategies, including RLHF, RLVR, and Rubric, to enhance the reasoning and alignment of modern AI models for specialized real-world tasks."   # privously Your Name's academic portfolio<--Update this with a general description of your site, this is the default if not overridden by a page
