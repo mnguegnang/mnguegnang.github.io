@@ -290,7 +290,7 @@ The backend auto-detects CUDA at startup and selects the appropriate LLM backend
 ## Links & Artifacts
 
 - 🔗 [Deployment Repository](https://github.com/mnguegnang/RAG-app-scientific-QA){:target="_blank"}
-- 🔬 [Research & Evaluation Repository](https://github.com/mnguegnang/RAG-for-Scientific-QA){:target="_blank"}
+-    [Research & Evaluation Repository](https://github.com/mnguegnang/RAG-for-Scientific-QA){:target="_blank"}
 - 📦 [Backend Container Image — GHCR](https://github.com/mnguegnang/RAG-app-scientific-QA/pkgs/container/rag-app-scientific-qa-backend){:target="_blank"}
 - 📦 [Frontend Container Image — GHCR](https://github.com/mnguegnang/RAG-app-scientific-QA/pkgs/container/rag-app-scientific-qa-frontend){:target="_blank"}
 
