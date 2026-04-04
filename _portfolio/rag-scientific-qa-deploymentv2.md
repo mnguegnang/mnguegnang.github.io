@@ -150,13 +150,13 @@ Both containers run with `network_mode: host`, giving the backend direct access 
 
 The inference pipeline, developed and evaluated in the companion research repo, executes in four stages within the backend container:
 
-**Stage 1 — Hybrid Retrieval.** FAISS dense search (SPECTER2 embeddings, 768-dim, `IndexFlatIP`, 47,810 vectors) is fused with BM25 sparse search via **Reciprocal Rank Fusion** (k=60), returning top-50 candidates. Short queries (< 10 words) trigger **HyDE** — the LLM generates a hypothetical passage used as the dense query instead of the raw question, improving recall on brief or ambiguous inputs. Short queries are sparse in embedding space; a raw two-word query like *"attention mechanism"* produces a generic vector that retrieves broadly, whereas a hypothetical answer passage anchors the dense search to the specific technical context of the question, yielding more precise top-k candidates.
+**Stage 1: Hybrid Retrieval.** FAISS dense search (SPECTER2 embeddings, 768-dim, IndexFlatIP, 47,810 vectors) is fused with BM25 sparse search via **Reciprocal Rank Fusion**, returning top-50 candidates. Short queries (< 10 words) trigger **HyDE**, the LLM generates a hypothetical passage used as the dense query instead of the raw question, improving recall on brief or ambiguous inputs. Short queries are sparse in embedding space; a raw two-word query like *"attention mechanism"* produces a generic vector that retrieves broadly, whereas a hypothetical answer passage anchors the dense search to the specific technical context of the question, yielding more precise top-k candidates.
 
-**Stage 2 — BGE Cross-Encoder Reranking.** `BAAI/bge-reranker-v2-m3` (XLM-RoBERTa architecture) re-scores all top-50 candidates and selects the **top-7** for generation context.
+**Stage 2: ColBERT v2 Reranking.** Upgraded from a cross-encoder to `ColBERT v2` late-interaction reranking. Document token embeddings are pre-computed offline; query time requires only a cheap MaxSim operation over the token embeddings, delivering cross-encoder-level precision at a fraction of the inference cost. The **top-7** documents are selected for generation context.
 
-**Stage 3 — CRAG Relevance Gate.** If the best reranker logit falls below a calibrated threshold, the pipeline returns a low-confidence warning rather than hallucinating an answer. This is a lightweight but effective hallucination suppression mechanism that requires no additional model.
+**Stage 3: CRAG Framework.** Implements the complete Corrective RAG framework with three actions: **Correct** (retrieved context is confidently relevant, proceed to generation), **Incorrect** (retrieved context is below threshold, suppress generation and return a low-confidence warning), and **Ambiguous** (borderline confidence generation proceeds with a hedged response). 
 
-**Stage 4 — Streamed Generation.** Llama-3.1-8B-Instruct (via Ollama on CPU, or HuggingFace Transformers on GPU — auto-detected) generates a chain-of-thought answer structured with `<Reasoning>` and `<Final Answer>` XML tags. The last **6 conversation turns** are injected as memory for multi-turn follow-up questions. Tokens are pushed via an **async queue** to a NDJSON streaming endpoint, delivering token-by-token output to the frontend.
+**Stage 4: Streamed Generation.** Llama-3.1-8B-Instruct (via Ollama on CPU, or HuggingFace Transformers on GPU — auto-detected) generates a chain-of-thought answer structured with `<Reasoning>` and `<Final Answer>` XML tags. The last **6 conversation turns** are injected as memory for multi-turn follow-up questions. Tokens are pushed via an **async queue** to a NDJSON streaming endpoint, delivering token-by-token output to the frontend.
 
 ### Key Design Decisions
 
@@ -172,7 +172,7 @@ The inference pipeline, developed and evaluated in the companion research repo, 
 
 ### Pipeline Evaluation Metrics
 
-The RAG pipeline was evaluated on **1,088 questions from the QASPER benchmark** using RAGAS (LLM-judge framework) and ALCE (citation grounding via NLI). Results reflect the current state of the pipeline; active improvement work is ongoing.
+The RAG pipeline was evaluated on **84 questions from the QASPER benchmark** using RAGAS (LLM-judge framework) and ALCE (citation grounding via NLI). Results reflect the current state of the pipeline; active improvement work is ongoing. Additional metrics will be published in a future evaluation run.
 
 <table>
   <thead>
@@ -223,11 +223,10 @@ The RAG pipeline was evaluated on **1,088 questions from the QASPER benchmark** 
   </tbody>
 </table>
 
-> ⚠️ **Ongoing Work:** ALCE citation scores are low due to a known regex + paper-ID filter issue currently being addressed. Faithfulness and context scores reflect the baseline pipeline; CRAG threshold calibration and retrieval tuning are in progress. Full re-evaluation at n=1,088 is planned after fixes are applied.
 
 ### Limitations & Failure Modes
 
-The CRAG gate suppresses generation when retrieved context falls below threshold — this is intentional, but conservative thresholds can produce "insufficient context" responses for valid queries. CRAG threshold calibration (`calibrate_crag.py`) in the research repo provides a diagnostic tool for tuning this trade-off. Additionally, the QASPER corpus is domain-specific to NLP papers; out-of-domain queries will retrieve poorly.
+The full CRAG framework introduces an Ambiguous action for borderline-confidence retrievals, reducing the number of outright rejections compared to the previous binary gate — but ambiguous responses carry hedged language that may frustrate users expecting a definitive answer. CRAG threshold calibration (`calibrate_crag.py`) in the research repo provides a diagnostic tool for tuning the Correct / Incorrect / Ambiguous boundaries. The QASPER corpus is domain-specific to NLP papers; out-of-domain queries will retrieve poorly regardless of reranker quality.
 
 ### Application-Level Impact
 
@@ -288,17 +287,9 @@ The backend auto-detects CUDA at startup and selects the appropriate LLM backend
 ## Links & Artifacts
 
 - 🔗 [Deployment Repository](https://github.com/mnguegnang/RAG-app-scientific-QA){:target="_blank"}
-- 🔬 [Research & Evaluation Repository](https://github.com/mnguegnang/RAG-for-Scientific-QA){:target="_blank"}
+-    [Research & Evaluation Repository](https://github.com/mnguegnang/RAG-for-Scientific-QA){:target="_blank"}
 - 📦 [Backend Container Image — GHCR](https://github.com/mnguegnang/RAG-app-scientific-QA/pkgs/container/rag-app-scientific-qa-backend){:target="_blank"}
 - 📦 [Frontend Container Image — GHCR](https://github.com/mnguegnang/RAG-app-scientific-QA/pkgs/container/rag-app-scientific-qa-frontend){:target="_blank"}
 
 ---
-
-## Tags / Keywords
-
-**Domain:** NLP · Generative AI · Retrieval-Augmented Generation · Scientific QA
-
-**Project Type:** Applied · End-to-End Deployment · MLOps · Open Source
-
-**Role Relevance:** GenAI Engineer · ML Engineer · AI Research Scientist · Data Scientist · Applied Scientist
 
