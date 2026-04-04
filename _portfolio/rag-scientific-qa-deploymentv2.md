@@ -1,12 +1,8 @@
 ---
-layout: page
-title: "Scientific RAG Question-Answering Application"
-description: "Production RAG system serving cited, streamed answers over NLP papers — deployed via GitHub Actions CI/CD to GHCR with one-command Docker Compose startup."
+title: "RAG Chatboard: A Platform for Addressing Research-Oriented Questions in Natural Language Processing"
+excerpt: "Production RAG system serving cited, streamed answers over Natural Language Processing (NLP) papers, deployed via GitHub Actions CI/CD to GHCR with one-command Docker Compose startup."
 img: assets/img/rag-scientific-qa-card.webp
-importance: 1
-category: [generative-ai, ml-engineering, nlp]
-toc:
-  sidebar: left
+collection: portfolio
 ---
 
 <div class="links" style="margin-bottom: 1.5rem;">
