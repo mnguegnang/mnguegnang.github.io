@@ -10,7 +10,7 @@ collection: portfolio
     🔗 GitHub — Deployment Repo
   </a>
   <a href="https://github.com/mnguegnang/RAG-for-Scientific-QA" target="_blank" class="btn btn-sm z-depth-0" role="button">
-    🔬 GitHub — Research & Evaluation Repo
+     GitHub — Research & Evaluation Repo
   </a>
 </div>
 
