@@ -100,14 +100,14 @@ The system is a **two-service Docker Compose stack**, designed so that end users
 
   <!-- Stage 2 -->
   <rect x="350" y="312" width="250" height="36" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
-  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#042C53" x="475" y="324" text-anchor="middle" dominant-baseline="central">Stage 2 — BGE reranker</text>
-  <text font-family="sans-serif" font-size="12" fill="#0C447C" x="475" y="340" text-anchor="middle" dominant-baseline="central">BAAI/bge-reranker-v2-m3 · top-7</text>
+  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#042C53" x="475" y="324" text-anchor="middle" dominant-baseline="central">Stage 2 — ColBERT v2 reranker</text>
+  <text font-family="sans-serif" font-size="12" fill="#0C447C" x="475" y="340" text-anchor="middle" dominant-baseline="central">Late interaction · MaxSim · top-7</text>
   <line x1="475" y1="348" x2="475" y2="362" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Stage 3 CRAG -->
   <rect x="350" y="362" width="250" height="36" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
-  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#412402" x="475" y="374" text-anchor="middle" dominant-baseline="central">Stage 3 — CRAG gate</text>
-  <text font-family="sans-serif" font-size="12" fill="#633806" x="475" y="390" text-anchor="middle" dominant-baseline="central">Confidence threshold · blocks hallucination</text>
+  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#412402" x="475" y="374" text-anchor="middle" dominant-baseline="central">Stage 3 — CRAG framework</text>
+  <text font-family="sans-serif" font-size="12" fill="#633806" x="475" y="390" text-anchor="middle" dominant-baseline="central">Correct · Incorrect · Ambiguous actions</text>
   <line x1="475" y1="398" x2="475" y2="412" stroke="#444441" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Stage 4 -->
@@ -143,6 +143,7 @@ The system is a **two-service Docker Compose stack**, designed so that end users
   <text font-family="sans-serif" font-size="12" fill="#5F5E5A" x="155" y="224" text-anchor="middle">depends on healthy backend</text>
   <path d="M155 214 L155 182" fill="none" stroke="#888780" stroke-width="0.8" stroke-dasharray="3 3" marker-end="url(#arrow)"/>
 </svg>
+
 
 Both containers run with `network_mode: host`, giving the backend direct access to Ollama running on the host. The frontend depends on a **health-gated** backend (`condition: service_healthy`) — a `/health` endpoint is polled every 30 seconds with a 300-second start period to accommodate first-boot artifact download.
 
