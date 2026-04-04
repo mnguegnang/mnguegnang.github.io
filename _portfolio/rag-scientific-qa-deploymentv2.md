@@ -22,9 +22,9 @@ toc:
 
 ## TL;DR
 
-- **Situation:** Researchers navigating thousands of NLP papers waste time manually synthesising answers from keyword search results that return documents, not answers.
-- **Action:** Designed and deployed a production RAG application — FastAPI backend, Chainlit chat UI, hybrid FAISS + BM25 retrieval, BGE cross-encoder reranking, CRAG-gated Llama 3 generation, and a full GitHub Actions CI/CD pipeline publishing immutable Docker images to GHCR on every commit.
-- **Result:** One-command deployment (`docker compose up`) on CPU or GPU hardware, with real-time token-streamed cited answers, transparent chain-of-thought reasoning, and hallucination suppression via the CRAG gate. Evaluation on **1,088 QASPER questions** yields Answer Relevancy **0.68** and Faithfulness **0.47** (ongoing — active improvement in progress).
+- Researchers navigating thousands of NLP papers waste time manually synthesising answers from keyword search results that return documents, not answers.
+- Designed and deployed a production RAG application — FastAPI backend, Chainlit chat UI, hybrid FAISS + BM25 retrieval, BGE cross-encoder reranking, CRAG-gated Llama 3 generation, and a full GitHub Actions CI/CD pipeline publishing immutable Docker images to GHCR on every commit.
+- One-command deployment (`docker compose up`) on CPU or GPU hardware, with real-time token-streamed cited answers, transparent chain-of-thought reasoning, and hallucination suppression via the CRAG gate. Evaluation on **1,088 QASPER questions** yields Answer Relevancy **0.68** and Faithfulness **0.47** (ongoing — active improvement in progress).
 
 ---
 
