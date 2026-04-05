@@ -2,6 +2,7 @@
 title: "Agentic AI & Post-training strategies"
 excerpt: "Frameworks for stress-testing and improving frontier AI through post-training strategies for Specialized Real-World Tasks.<br/><img src='/images/Post_training_flowchart.png' style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>"
 collection: portfolio
+order: 2
 ---
 
 ## Limitations of Current Frontier AI Models
