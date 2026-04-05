@@ -22,8 +22,8 @@ order: 3
 ## TL;DR
 
 - Training deep neural networks requires optimizing a nonconvex loss function, where convergence guarantees remain a fundamental open challenge.
-- Extended prior gradient flow analyses to the discrete gradient descent (GD) setting and proved that, under explicit step-size conditions, GD converges to a global minimum for almost all initializations in deep linear networks — without the restrictive deficiency-margin or boundedness assumptions required by earlier work.
-- A key theoretical contribution is a norm-based bound on GD iterates that controls the exploding gradient problem, enabling application of a discrete Lojasiewicz inequality. Notably, the derived maximum permissible step size does not decrease exponentially with network depth, distinguishing this result from prior analyses. Empirical experiments further demonstrate that these convergence properties generalize to nonlinear architectures with tanh and ReLU activations.
+- Extended prior gradient flow analyses to the discrete gradient descent (GD) setting and proved that, under explicit step size (learning rate) conditions, GD converges to a global minimum for almost all initializations in deep linear networks — without the restrictive deficiency-margin or boundedness assumptions required by earlier work.
+- A key theoretical contribution is a norm-based bound on GD iterates that controls the exploding gradient problem, enabling application of a discrete Lojasiewicz inequality. In particular, the derived maximum permissible learning rate does not decrease exponentially with network depth, distinguishing this result from prior analyses. Empirical experiments further demonstrate that these convergence properties generalize to nonlinear architectures with tanh activations.
 
 ---
 
@@ -115,7 +115,7 @@ A distinctive feature of this work is the derived step-size bound. Unlike earlie
 
 ### Empirical Validation on Nonlinear Networks
 
-The theoretical framework is developed for linear networks, but the practical implications extend further. Experiments on networks with **tanh** and **ReLU** activation functions demonstrate that the derived learning rate bounds and convergence behavior carry over to nonlinear architectures. Exceeding the prescribed step-size bound leads to training divergence, confirming the tightness of the theoretical conditions.
+The theoretical framework is developed for linear networks, but the practical implications extend further. Experiments on networks with **tanh** activation functions demonstrate that the derived learning rate bounds and convergence behavior carry over to nonlinear architectures. Exceeding the prescribed step-size bound leads to training divergence, confirming the tightness of the theoretical conditions.
 
 <figure class="half">
     <img src="/images/Loss_evolution_tanh_constantetak_tanh_d70_r25_stepsize0_00003_epochs1000000.png" alt="Nonlinear networks" style='width: 100%; max-width: 700px; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);'>
@@ -125,7 +125,7 @@ The theoretical framework is developed for linear networks, but the practical im
 
 ### Limitations & Future Directions
 
-The analysis is restricted to the square loss and fully connected architectures. Extension to cross-entropy loss, convolutional layers, and residual connections remains open. The companion work on SGD (SampTA 2023) begins to address stochastic variants by employing stochastic approximation and asymptotic pseudo-trajectory frameworks, establishing convergence guarantees for SGD in training linear neural networks with both constant and adaptive learning rate schedules.
+The analysis is restricted to the square loss and fully connected architectures. Extension to cross-entropy loss, convolutional layers, and residual connections remains open. The companion work on SGD (SampTA 2023) begins to address stochastic variants by employing stochastic approximation and asymptotic pseudo-trajectory frameworks, establishing convergence guarantees for SGD in training linear neural networks with both decreasing and adaptive learning rate schedules.
 
 ---
 
