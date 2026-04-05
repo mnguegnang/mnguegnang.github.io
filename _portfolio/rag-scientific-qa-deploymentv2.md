@@ -3,6 +3,7 @@ title: "RAG Chatboard: A Platform for Addressing Research-Oriented Questions in 
 excerpt: "Production RAG system serving cited, streamed answers over Natural Language Processing (NLP) papers, deployed via GitHub Actions CI/CD to GHCR with one-command Docker Compose startup."
 img: assets/img/rag-scientific-qa-card.webp
 collection: portfolio
+order: 1
 ---
 
 <div class="links" style="margin-bottom: 1.5rem;">
