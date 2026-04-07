@@ -1,9 +1,9 @@
 ---
-layout: page
 title: "Four-Stage RAG Pipeline for Grounded Scientific Question Answering"
-description: "SPECTER2 + BM25 hybrid retrieval, ColBERT v2 late-interaction reranking, and CRAG gating for cited, hallucination-resistant answers over NLP research papers."
+excerpt: "SPECTER2 + BM25 hybrid retrieval, ColBERT v2 late-interaction reranking, and CRAG gating for cited, hallucination-resistant answers over NLP research papers."
 img: assets/img/rag-scientific-qa-card.webp
-importance: 1
+collection: portfolio
+order: 2
 category: [nlp, generative-ai, ml-engineering]
 ---
 
@@ -357,15 +357,15 @@ The evaluation stack — a fully local LLM judge serving both generation and RAG
   </a>
   &nbsp;
   <a href="https://huggingface.co/datasets/allenai/qasper" target="_blank" class="btn btn-sm z-depth-0" role="button">
-    📊 QASPER Dataset
+    QASPER Dataset
   </a>
   &nbsp;
   <a href="https://huggingface.co/allenai/specter2_base" target="_blank" class="btn btn-sm z-depth-0" role="button">
-    🤖 SPECTER2
+    SPECTER2
   </a>
   &nbsp;
   <a href="https://huggingface.co/colbert-ir/colbertv2.0" target="_blank" class="btn btn-sm z-depth-0" role="button">
-    🤖 ColBERT v2
+    ColBERT v2
   </a>
 </div>
 
@@ -376,7 +376,5 @@ The evaluation stack — a fully local LLM judge serving both generation and RAG
 **Domain:** NLP · Information Retrieval · Generative AI · Scientific Question Answering
 
 **Project Type:** Research · End-to-End RAG Pipeline · Ongoing
-
-**Role Relevance:** ML Engineer · GenAI Engineer · AI Research Scientist · Applied Scientist
 
 **Key Technologies:** RAG · SPECTER2 · FAISS · BM25 · Reciprocal Rank Fusion · ColBERT v2 · Late-Interaction Reranking · CRAG · HyDE · Llama-3.1-8B · vLLM · nomic-embed-text · RAGAS · ALCE · QASPER · Python · SLURM
