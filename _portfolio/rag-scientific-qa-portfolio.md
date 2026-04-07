@@ -17,9 +17,9 @@ category: [nlp, generative-ai, ml-engineering]
 
 ## 1. Executive Summary (TL;DR)
 
-- **Situation:** Open-domain question answering over scientific literature is severely hampered by hallucination — language models confidently fabricate citations and misrepresent methodology when answering without grounded retrieval.
-- **Action:** Designed and implemented a four-stage RAG pipeline combining SPECTER2 dense retrieval, BM25 sparse retrieval, Reciprocal Rank Fusion, **ColBERT v2 late-interaction reranking**, a Corrective RAG (CRAG) relevance gate with dual-mode calibration, and HyDE query expansion — all orchestrated to deliver cited, source-grounded answers from a 47,810-chunk index of NLP research papers. The evaluation stack uses a fully local LLM-as-judge (vLLM) for both RAGAS and ALCE NLI entailment checks, with `nomic-embed-text-v1.5` for Answer Relevancy scoring.
-- **Result:** On the latest evaluation run (n=84 QASPER questions), the pipeline achieves **ALCE Citation Precision of 0.8373**, **ALCE Citation Recall of 0.7151**, **Faithfulness of 0.7150**, and **Answer Relevancy of 0.6911**. Active work on Context Recall continues with the ColBERT v2 upgrade.
+- Open-domain question answering over scientific literature is severely hampered by hallucination — language models confidently fabricate citations and misrepresent methodology when answering without grounded retrieval.
+- Designed and implemented a four-stage RAG pipeline combining SPECTER2 dense retrieval, BM25 sparse retrieval, Reciprocal Rank Fusion, **ColBERT v2 late-interaction reranking**, a Corrective RAG (CRAG) relevance gate with dual-mode calibration, and HyDE query expansion — all orchestrated to deliver cited, source-grounded answers from a 47,810-chunk index of NLP research papers. The evaluation stack uses a fully local LLM-as-judge (vLLM) for both RAGAS and ALCE NLI entailment checks, with `nomic-embed-text-v1.5` for Answer Relevancy scoring.
+- On the latest evaluation run (n=84 QASPER questions), the pipeline achieves **ALCE Citation Precision of 0.8373**, **ALCE Citation Recall of 0.7151**, **Faithfulness of 0.7150**, and **Answer Relevancy of 0.6911**. Active work on Context Recall continues with the ColBERT v2 upgrade.
 
 ---
 
@@ -281,9 +281,9 @@ The `ScientificRAGPipeline` orchestrates four sequential stages. Every architect
 
 The evaluation stack is fully local — no external API calls. Two complementary frameworks run in a single SLURM job:
 
-- **RAGAS** (Es et al., 2023) measures retrieval and generation quality via an LLM judge: Context Precision, Context Recall, Faithfulness, and Answer Relevancy. The judge is Llama-3.1-8B-Instruct served by the same vLLM instance used for generation. Answer Relevancy uses `nomic-ai/nomic-embed-text-v1.5` embeddings (via `_RagasHFEmbeddingsFixed`, a thin subclass that bridges the LangChain `embed_query` / `embed_documents` interface gap in the native ragas `HuggingFaceEmbeddings`). Rows with empty contexts (pipeline errors) are excluded from RAGAS averages but retained in the CSV with NaN.
-- **ALCE** (Gao et al., 2023, EMNLP) measures citation-level grounding via a local NLI entailment check: for each sentence in the `<Final Answer>` block, `ALCE_RAGASevaluator._check_entailment()` prompts the local LLM judge to determine whether the cited passage supports the claim. Citation Precision = supported sentences / sentences with citations; Citation Recall = supported sentences / all answer sentences.
-
+- **RAGAS** (Es et al., 2023) measures retrieval and generation quality via an LLM judge: Context Precision, Context Recall, Faithfulness, and Answer Relevancy. The judge is Llama-3.1-8B-Instruct served by the same vLLM instance used for generation. Answer Relevancy uses `nomic-ai/nomic-embed-text-v1.5` embeddings (via `_RagasHFEmbeddingsFixed`, a thin subclass that bridges the LangChain `embed_query` / `embed_documents` interface gap in the native ragas `HuggingFaceEmbeddings`).
+- **ALCE** (Gao et al., 2023, EMNLP) measures citation-level grounding via a local NLI entailment check: for each sentence in the `<Final Answer>` block, `ALCE_RAGASevaluator._check_entailment()` prompts the local LLM judge to determine whether the cited passage supports the claim.
+  
 A key pre-processing step in `generate_predictions.py` underpins the validity of both metrics: the `extract_final_answer()` function strips the `<Reasoning>` block from LLM output before evaluation. Reasoning sentences contain no `[Doc N]` citations; including them inflated false-negative Citation Recall in prior runs. The fix handles three known Llama-3 output failure modes (missing closing tags, multiple `<Final Answer>` blocks, line-wrapped tags) and is the primary driver of the jump from ALCE scores of ~0.05 to ~0.84.
 
 ### Latest results (2026-04-04, n=84)
@@ -339,7 +339,6 @@ The ALCE jump from 0.057 → **0.8373** Citation Precision and 0.057 → **0.715
 
 Context Recall (**0.5882**) is the remaining bottleneck — the retrieval stack fails to surface gold evidence for roughly 41% of questions. The most likely causes are out-of-vocabulary scientific terms defeating both BM25 and SPECTER2, and fixed 500-token chunk boundaries splitting answer-bearing passages. The **ColBERT v2 upgrade** (Stage 2) directly targets this by enabling token-level MaxSim matching, which is more robust to exact-term mismatches than sentence-level cross-encoder scores. Results from the ColBERT run are pending.
 
-Context Precision (18 NaN/timeout skips → 0.0000) is unreliable in this run and will be re-evaluated.
 
 > **[Ongoing Work]** ColBERT v2 reranker evaluation in progress — expected to improve Context Recall. Context Precision to be re-evaluated with timeout-resistant judge configuration. CRAG threshold to be re-calibrated post-ColBERT.
 
